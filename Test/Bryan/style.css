@@ -70,38 +70,44 @@ html{
     background: black;
     color: white;
 }
-.presentation .right
+.presentation .max-width .right
 {
     width: 45%;
-    margin-left: 40px;
    
 }
 .presentation .right img{
-    height: 400px ;
-    width:  400px;
+    height: 20px ;
+    width:  200px;
     object-fit: cover;
     border-radius: 6px;
     margin-top: 15px;
   
 }
-.presentation .left{
+.presentation .max-width .left{
     width: 45%;
+    display: inline-block;
 }
 
 .presentation .left .title
 {
-    font-size : 75px;
+    font-size : 45px;
     font-weight:800px ;
     color: rgb(241, 135, 58);
     padding-bottom: 30px;
 }
  
 .presentation .left .content{
-    width: 700px;
+    
     display: inline-block;
     text-align: justify;
 }
 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:  auto;
+    display: flex;
+}
 
 
 /* Ancien partie */
@@ -173,16 +179,6 @@ html{
     text-align: center;
 }
 
-.max-width .plat-content{
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin:  auto;
-}
+
+
