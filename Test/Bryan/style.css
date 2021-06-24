@@ -8,6 +8,103 @@ html{
     scroll-behavior:smooth;
 }
 
+.accueil
+{
+    background-image:url(Images/Burger.jpeg) ;
+    background-repeat: no-repeat;  
+    color: white;
+    height: 800px;
+   
+}
+
+.accueil .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.accueil .title a{
+
+    font-size: 100px;
+    font-weight: 600;
+    
+}
+.accueil .title{
+    padding-left:50px ;
+    padding-top: 15px;
+}
+
+.accueil .navbar a{
+    color: white;
+    
+}
+.accueil .navbar li{
+    display: inline-block;
+    list-style: none;
+}
+.accueil .navbar li a
+{
+    font-size:30px;
+    font-weight: 800;
+    margin-left: 50px;
+    transition: color 0.3s ease ;
+}
+
+.accueil .navbar li a:hover{
+    color: crimson;
+}
+.accueil .navbar .menu{
+    width: 1000px;
+    position: static;
+    margin-bottom: 50px;
+}
+
+.presentation{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: black;
+    color: white;
+}
+.presentation .right
+{
+    width: 45%;
+    margin-left: 40px;
+   
+}
+.presentation .right img{
+    height: 400px ;
+    width:  400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 15px;
+  
+}
+.presentation .left{
+    width: 45%;
+}
+
+.presentation .left .title
+{
+    font-size : 75px;
+    font-weight:800px ;
+    color: rgb(241, 135, 58);
+    padding-bottom: 30px;
+}
+ 
+.presentation .left .content{
+    width: 700px;
+    display: inline-block;
+    text-align: justify;
+}
+
+
+
+/* Ancien partie */
 #map
 {
     height: 500px ;
