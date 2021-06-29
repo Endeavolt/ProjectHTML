@@ -76,7 +76,7 @@ html{
    
 }
 .presentation .right img{
-    height: 20px ;
+    height: 200px ;
     width:  200px;
     object-fit: cover;
     border-radius: 6px;
@@ -102,11 +102,160 @@ html{
     text-align: justify;
 }
 
-.max-width{
-    max-width: 1300px;
+/* Infomation section*/
+
+.info{
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: rgb(32, 32, 32);
+    color: white;
+
+}
+
+.info .max-width{
+    max-width: 1700px;
     padding: 0 80px;
     margin:  auto;
     display: flex;
+    padding-top: 50px;
+}
+.info .max-width h3
+{
+    font-size: 70px;
+    color: tomato;
+    align-items: center;
+}
+.info .max-width .right{
+    width: 45%;
+    display: inline-block; 
+    text-align: center;
+}
+
+.info .max-width .information  {
+    font-size: 25px;
+   margin-top: 20px;
+}
+
+.info .max-width .right .information .title
+{
+    font-weight: 650;
+}
+
+.info .max-width .right .information .content  {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.info .max-width .left{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+
+.info .max-width .left .content
+{
+    font-size: 25px;
+}
+.info .max-width .left .content .dayhour 
+{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    text-align: center;
+}
+.info .max-width .left .content .dayhour .day {
+    
+    font-weight:600;
+    width: 45%;
+    margin-right: 25px;
+   
+}
+.info .max-width .left .content .dayhour .hour {
+
+    width: 45%;
+    margin-left: 25px;
+}
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 80px;
+    margin:  auto;
+    display: flex;
+}
+
+
+/* Contact Partie */
+.contact{
+    align-items: center;
+    background-color: #222;
+    color: white;
+    height: 600px;
+}
+
+.contact .max-width
+{
+    display: block;
+}
+
+.contact .max-width .title
+{
+    text-align: center;
+   
+    font-size : 60px;
+    font-weight:800;
+    color: rgb(241, 135, 58);
+    
+}
+.contact .max-width .content
+{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    
+}
+
+.contact .max-width ul
+{   
+    text-align: center;
+    height: 400px;
+    background-color: #222;
+}
+
+.contact .max-width li{
+    margin-top: 35px;
+}
+
+.contact .max-width .content a{
+    color: white;
+}
+
+.contact .max-width .content li a{
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+ footer
+{
+ 
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span {
+    color:  white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer span a {
+    color: crimson;
 }
 
 
@@ -120,9 +269,8 @@ html{
 {
     margin-top: 50px;
 }
-.plat-content .Plat{
-  
-    
+.plat-content .Plat
+{
     
     width: calc(33% - 50px) ;
     height: 100px;
