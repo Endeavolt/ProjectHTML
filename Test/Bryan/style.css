@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Ananda;
+    src: url(Police/Ananda\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: Biko;
+    src: url(Police/Biko_Regular.otf);
+}
+
+@font-face {
+    font-family: Monsterrat-Regular;
+    src: url(Police/Montserrat-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -28,7 +43,7 @@ html{
 
     font-size: 100px;
     font-weight: 600;
-    
+    font-family: Ananda;
 }
 .accueil .title{
     padding-left:50px ;
@@ -47,6 +62,7 @@ html{
 {
     font-size:30px;
     font-weight: 800;
+    font-family: Biko;
     margin-left: 50px;
     transition: color 0.3s ease ;
 }
