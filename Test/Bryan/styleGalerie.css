@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Ananda;
+    src: url(Police/Ananda\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: Biko;
+    src: url(Police/Biko_Regular.otf);
+}
+
+@font-face {
+    font-family: Monsterrat-Regular;
+    src: url(Police/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.accueil
+{
+    background-image:url(Images/Burger.jpeg) ;
+    background-repeat: no-repeat;  
+    color: white;
+    height: 800px;
+   
+}
+
+.accueil .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.accueil .title a{
+
+    font-size: 100px;
+    font-weight: 600;
+    font-family: Ananda;
+}
+.accueil .title{
+    padding-left:50px ;
+    padding-top: 15px;
+}
+
+.accueil .navbar a{
+    color: white;
+    
+}
+.accueil .navbar li{
+    display: inline-block;
+    list-style: none;
+}
+.accueil .navbar li a
+{
+    font-size:30px;
+    font-weight: 800;
+    font-family: Biko;
+    margin-left: 50px;
+    transition: color 0.3s ease ;
+}
+
+.accueil .navbar li a:hover{
+    color: crimson;
+}
+.accueil .navbar .menu{
+    width: 1000px;
+    position: static;
+    margin-bottom: 50px;
+}
+
+.presentation{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: black;
+    color: white;
+}
+.presentation .max-width .right
+{
+    width: 45%;
+   
+}
+.presentation .right img{
+    height: 200px ;
+    width:  200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 15px;
+  
+}
+.presentation .max-width .left{
+    width: 45%;
+    display: inline-block;
+}
+
+.presentation .left .title
+{
+    font-size : 45px;
+    font-weight:800px ;
+    color: rgb(241, 135, 58);
+    padding-bottom: 30px;
+}
+ 
+.presentation .left .content{
+    
+    display: inline-block;
+    text-align: justify;
+}
+
+/* Infomation section*/
+
+.info{
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: rgb(32, 32, 32);
+    color: white;
+
+}
+
+.info .max-width{
+    max-width: 1700px;
+    padding: 0 80px;
+    margin:  auto;
+    display: flex;
+    padding-top: 50px;
+}
+.info .max-width h3
+{
+    font-size: 70px;
+    color: tomato;
+    align-items: center;
+}
+.info .max-width .right{
+    width: 45%;
+    display: inline-block; 
+    text-align: center;
+}
+
+.info .max-width .information  {
+    font-size: 25px;
+   margin-top: 20px;
+}
+
+.info .max-width .right .information .title
+{
+    font-weight: 650;
+}
+
+.info .max-width .right .information .content  {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.info .max-width .left{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+
+.info .max-width .left .content
+{
+    font-size: 25px;
+}
+.info .max-width .left .content .dayhour 
+{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    text-align: center;
+}
+.info .max-width .left .content .dayhour .day {
+    
+    font-weight:600;
+    width: 45%;
+    margin-right: 25px;
+   
+}
+.info .max-width .left .content .dayhour .hour {
+
+    width: 45%;
+    margin-left: 25px;
+}
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 80px;
+    margin:  auto;
+    display: flex;
+}
+
+
+/* Contact Partie */
+.contact{
+    align-items: center;
+    background-color: #222;
+    color: white;
+    height: 600px;
+}
+
+.contact .max-width
+{
+    display: block;
+}
+
+.contact .max-width .title
+{
+    text-align: center;
+   
+    font-size : 60px;
+    font-weight:800;
+    color: rgb(241, 135, 58);
+    
+}
+.contact .max-width .content
+{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    
+}
+
+.contact .max-width ul
+{   
+    text-align: center;
+    height: 400px;
+    background-color: #222;
+}
+
+.contact .max-width li{
+    margin-top: 35px;
+}
+
+.contact .max-width .content a{
+    color: white;
+}
+
+.contact .max-width .content li a{
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+ footer
+{
+ 
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span {
+    color:  white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer span a {
+    color: crimson;
+}
+
+
+/* Ancien partie */
+#map
+{
+    height: 500px ;
+    width:  500px;
+}
+.menu
+{
+    margin-top: 50px;
+}
+.plat-content .Plat
+{
+    
+    width: calc(33% - 50px) ;
+    height: 100px;
+    background: crimson;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      transition: all 0.5s ease;  
+}
+.Plat:hover{
+    font-size : 0px;
+    background: #222;
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.Title{
+  
+    font-size:  30px;
+  
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;  
+}
+
+.Plat:hover > .Title{
+    font-size: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.text {
+    display: none;
+    transition: all 0.5s ease;  
+}
+
+
+.Plat:hover > .text{
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
