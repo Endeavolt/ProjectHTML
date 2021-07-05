@@ -226,7 +226,7 @@ html{
 
 /* Contact Partie */
 .contact{
-    align-items: center;
+    /* align-items: center; */
     background-color: #222;
     color: white;
     height: 600px;
@@ -246,6 +246,7 @@ html{
     color: rgb(241, 135, 58);
     
 }
+
 .contact .max-width .content
 {
     background-color: rgb(27, 27, 27);

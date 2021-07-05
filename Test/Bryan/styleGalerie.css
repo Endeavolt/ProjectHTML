@@ -19,29 +19,39 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     scroll-behavior:smooth;
 }
 
 .accueil
 {
-    background-image:url(Images/Burger.jpeg) ;
-    background-repeat: no-repeat;  
-    color: white;
-    height: 800px;
-   
+    color: white;   
+    height: 140px;
 }
 
 .accueil .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition:  all 0.3s ease;
+    background: #222;
+
+}
+
+.accueil .navbar.sticky
+{
+    background: white;
+    color: tomato;
+    transition:  all 0.3s ease;
 }
 
 .accueil .title a{
 
-    font-size: 100px;
+    font-size: 75px;
     font-weight: 600;
     font-family: Ananda;
 }
@@ -54,6 +64,11 @@ html{
     color: white;
     
 }
+.accueil .navbar.sticky a{
+    color: tomato;
+    
+}
+
 .accueil .navbar li{
     display: inline-block;
     list-style: none;
@@ -76,190 +91,68 @@ html{
     margin-bottom: 50px;
 }
 
-.presentation{
-   
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 600px;
-    background: black;
-    color: white;
-}
-.presentation .max-width .right
-{
-    width: 45%;
-   
-}
-.presentation .right img{
-    height: 200px ;
-    width:  200px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-top: 15px;
-  
-}
-.presentation .max-width .left{
-    width: 45%;
-    display: inline-block;
-}
-
-.presentation .left .title
-{
-    font-size : 45px;
-    font-weight:800px ;
-    color: rgb(241, 135, 58);
-    padding-bottom: 30px;
-}
- 
-.presentation .left .content{
-    
-    display: inline-block;
-    text-align: justify;
-}
-
-/* Infomation section*/
-
-.info{
-
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 600px;
-    background: rgb(32, 32, 32);
-    color: white;
-
-}
-
-.info .max-width{
-    max-width: 1700px;
-    padding: 0 80px;
-    margin:  auto;
-    display: flex;
-    padding-top: 50px;
-}
-.info .max-width h3
-{
-    font-size: 70px;
-    color: tomato;
-    align-items: center;
-}
-.info .max-width .right{
-    width: 45%;
-    display: inline-block; 
-    text-align: center;
-}
-
-.info .max-width .information  {
-    font-size: 25px;
-   margin-top: 20px;
-}
-
-.info .max-width .right .information .title
-{
-    font-weight: 650;
-}
-
-.info .max-width .right .information .content  {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.info .max-width .left{
-    width: 45%;
-    display: inline-block;
-    text-align: center;
-    
-}
-
-
-.info .max-width .left .content
-{
-    font-size: 25px;
-}
-.info .max-width .left .content .dayhour 
-{
-    width: 100%;
-    display: flex;
-    margin-top: 25px;
-    text-align: center;
-}
-.info .max-width .left .content .dayhour .day {
-    
-    font-weight:600;
-    width: 45%;
-    margin-right: 25px;
-   
-}
-.info .max-width .left .content .dayhour .hour {
-
-    width: 45%;
-    margin-left: 25px;
-}
-
-
 .max-width{
-    max-width: 1300px;
+    max-width: 1600px;
     padding: 80px;
     margin:  auto;
+}
+
+.cuisine
+{
+  height: 800px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: #111;
+  
+}
+
+.cuisine .title{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Biko;
+    margin-bottom: 15px;
+}
+
+.cuisine .photoblock
+{
     display: flex;
 }
 
-
-/* Contact Partie */
-.contact{
-    align-items: center;
-    background-color: #222;
-    color: white;
-    height: 600px;
-}
-
-.contact .max-width
-{
-    display: block;
-}
-
-.contact .max-width .title
-{
-    text-align: center;
+.cuisine .photoblock img {
    
-    font-size : 60px;
-    font-weight:800;
-    color: rgb(241, 135, 58);
+    max-width: 100%;
+    max-height: 100%;
     
 }
-.contact .max-width .content
+
+.cuisine .photoblock .right
 {
-    background-color: rgb(27, 27, 27);
-    color: white;
-    
+    height: 532px;
+    width:35% ;
+    margin-left: 15px;
+   display: grid;
+    align-items: center;
+  
+   
 }
 
-.contact .max-width ul
-{   
-    text-align: center;
-    height: 400px;
-    background-color: #222;
+.cuisine .photoblock .right img
+{
+    padding-top: 15px;
+    margin-bottom: 15px;
 }
 
-.contact .max-width li{
-    margin-top: 35px;
+.cuisine .photoblock .left
+{
+    width: 65%;
 }
-
-.contact .max-width .content a{
-    color: white;
-}
-
-.contact .max-width .content li a{
-    font-size: 25px;
-    font-weight: 500px;
-}
-
- footer
+footer
 {
  
-    background: #111;
+    background: rgb(2, 2, 2);
     padding: 20px 23px;
     color: #fff;
 }
@@ -273,7 +166,6 @@ footer span {
 footer span a {
     color: crimson;
 }
-
 
 /* Ancien partie */
 #map
@@ -342,3 +234,7 @@ footer span a {
     font-weight: 500;
     text-align: center;
 }
+
+
+
+
