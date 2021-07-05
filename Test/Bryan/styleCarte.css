@@ -78,29 +78,34 @@ html{
 
 .presentation{
    
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 800px;
+    height: 1200px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
+.presentation .max-width{
+    max-width: 1750px ;
+}
 .presentation .max-width .right
 {
-    width: 45%;
+    width: 50%;
+    align-items: center;
    
 }
 .presentation .right img{
-    height: 200px ;
-    width:  200px;
+    height: 500px ;
+    width:  800px;
     object-fit: cover;
-    border-radius: 6px;
-    margin-top: 15px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-right: 100px;
   
 }
 .presentation .max-width .left{
-    width: 45%;
+    width: 60%;
     display: inline-block;
 }
 
@@ -112,7 +117,7 @@ html{
     padding-bottom: 30px;
 }
  
-.presentation .left .content{
+.presentation .left .contentFormule{
     
     display: inline-block;
     text-align: justify;
@@ -123,12 +128,12 @@ html{
     font-weight:800px ;
     color: rgb(241, 135, 58);
     padding-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 300px;
 }
-.presentation .left .content{
+.presentation .left .contentUnite{
     
     display: inline-block;
-    text-align: justify;
+    text-align: right;
 }
 
 /* Infomation section*/
@@ -214,7 +219,7 @@ html{
 
 .max-width{
     max-width: 1300px;
-    padding: 80px;
+    padding: 8px;
     margin:  auto;
     display: flex;
 }
