@@ -82,53 +82,106 @@ html{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 800px;
+    height: 1030px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
-.presentation .max-width .right
+.presentation .max-width{
+    max-width: 1900px ;
+    max-height: 1030px ;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.presentation .max-width .Topright
 {
-    width: 45%;
+    height: 50%;
+    width: 50%;
+    align-items: right;
+    display: flex;
    
 }
-.presentation .right img{
-    height: 200px ;
-    width:  200px;
+.presentation .Topright img{
+    height: 507px ;
+    width:  940px;
     object-fit: cover;
-    border-radius: 6px;
-    margin-top: 15px;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
   
 }
-.presentation .max-width .left{
-    width: 45%;
+.presentation .max-width .Topleft{
+    height: 50%;
+    width: 50%;
+    border-right: 150px;
+    margin-top: 0px;
     display: inline-block;
+    text-align: left;
+
 }
 
-.presentation .left .titleFormule
+.presentation .max-width .Botright{
+    height: 50%;
+    width: 50%;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-right: 50px;
+    display: inline-block;
+    text-align: right;
+}
+.presentation .max-width .Botleft
+{
+    height: 50%;
+    width: 50%;
+    align-items: right;
+   
+}
+
+.presentation .Botleft{
+
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.presentation .Botleft img{
+    height: 507px ;
+    width:  940px;
+    object-fit: cover;
+    border-radius: 0px;
+
+  
+}
+
+.presentation .Topleft .titleFormule
 {
     font-size : 45px;
     font-weight:800px ;
+    margin-top: 50px;
+    padding-left: 50px;
     color: rgb(241, 135, 58);
-    padding-bottom: 30px;
 }
  
-.presentation .left .content{
+.presentation .Topleft .contentFormule{
     
-    display: inline-block;
-    text-align: justify;
+    margin-top: 50px;
+    margin-right: 250px;
+    padding-left: 50px;
+    display: flex;
+    text-align: left;
 }
-.presentation .left .titleUnite
+.presentation .Botright .titleUnite
 {
     font-size : 45px;
+    margin-top: 50px;
+    padding-right: 50px;
     font-weight:800px ;
     color: rgb(241, 135, 58);
-    padding-bottom: 30px;
-    margin-top: 50px;
 }
-.presentation .left .content{
-    
-    display: inline-block;
-    text-align: justify;
+.presentation .Botright .contentUnite{
+    margin-top: 50px;
+    margin-left: 250px;
+    padding-right: 50px;
+    display: flex;
+    text-align: right;
 }
 
 /* Infomation section*/
@@ -214,7 +267,7 @@ html{
 
 .max-width{
     max-width: 1300px;
-    padding: 80px;
+    padding: 8px;
     margin:  auto;
     display: flex;
 }

@@ -83,28 +83,34 @@ html{
     align-items: center;
     justify-content: space-between;
     height: 600px;
-    background: black;
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.presentation .max-width{
+    max-width: 1900px;
+    padding: 0px;
+    /* margin:  auto; */
+    display: flex;
 }
 .presentation .max-width .right
 {
-    width: 45%;
-   
+    /* width: 50%;  */
+    margin-left: 150px;
 }
-.presentation .right img{
-    height: 200px ;
-    width:  200px;
+.presentation .right {
     object-fit: cover;
     border-radius: 6px;
-    margin-top: 15px;
+    margin-top: 0px;
   
 }
 .presentation .max-width .left{
-    width: 45%;
+
     display: inline-block;
+    margin-left: 0px;
+    max-width: 50%;
 }
 
-.presentation .left .title
+.presentation .right .title
 {
     font-size : 45px;
     font-weight:800px ;
@@ -199,14 +205,6 @@ html{
 }
 
 
-.max-width{
-    max-width: 1300px;
-    padding: 80px;
-    margin:  auto;
-    display: flex;
-}
-
-
 /* Contact Partie */
 .contact{
     align-items: center;
@@ -278,8 +276,9 @@ footer span a {
 /* Ancien partie */
 #map
 {
-    height: 500px ;
-    width:  500px;
+    height: 550px ;
+    width:  900px;
+    margin-left: 200px;
 }
 .menu
 {
@@ -342,3 +341,117 @@ footer span a {
     font-weight: 500;
     text-align: center;
 }
+
+/* Contact styling code */
+
+
+
+
+.presentation .right {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+}
+.presentation .right .titreContact{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+   
+}
+.presentation .right .left p{
+    text-align: justify;
+}
+.presentation .right .left .icon{
+    margin: 10px 0;
+}
+
+.presentation .right .row
+{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.presentation .right .row .info{
+    margin-left: 30px;
+}
+.presentation .right .row i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.presentation .right .info .head{
+    font-weight: 500;
+
+}
+.presentation .right .info .sub-title{
+    color: #333;
+}
+
+.presentation .right .fields{
+    display: flex;
+}
+
+.presentation .right .field,
+.presentation .right form .fields .field
+{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.presentation .right form .textarea{
+    height: 140px;
+}
+
+.presentation .right form .name{
+ margin-right: 10px;   
+}
+
+.presentation .right form .email{
+    margin-left: 10px;   
+}
+   
+
+.presentation .right form .field input,
+.presentation .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border : 1px solid lightgray;
+    border-radius: 6px;
+    outline:none;
+    padding: 0 15px ;
+    font-size: 17px;
+    font-family:'Roboto',sans-serif ;
+}
+
+.presentation .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.presentation .right form .button{
+    height: 47px;
+    width: 170px;
+    margin-left: 35%;
+}
+
+.presentation .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500px;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.presentation .right form .button button:hover
+{    color:crimson;
+    background: none;
+}
+
+
+/* footer section styling */
