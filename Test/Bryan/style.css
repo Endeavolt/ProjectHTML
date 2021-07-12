@@ -140,20 +140,38 @@ html{
 .info{
 
     flex-wrap: wrap;
-    align-items: center;
+    
     justify-content: space-between;
-    height: 600px;
-    background: rgb(32, 32, 32);
+    display: flex;
+
     color: white;
 
 }
 
+.info .one {
+    width: 50%;
+    height: initial;
+    background-color: gray;
+   
+    
+}
+
+.info .two {
+    width: 50%;
+    height: 100%;
+    background-color:black;
+   
+    display: flex;
+}
+
+
 .info .max-width{
-    max-width: 1700px;
-    padding: 0 80px;
+    max-width: 1900px;
+ 
     margin:  auto;
     display: flex;
-    padding-top: 50px;
+  
+    width: 800px;
 }
 .info .max-width h3
 {
@@ -162,9 +180,10 @@ html{
     align-items: center;
 }
 .info .max-width .right{
-    width: 45%;
+    width: 100%;
     display: inline-block; 
     text-align: center;
+    
 }
 
 .info .max-width .information  {
@@ -184,10 +203,10 @@ html{
 }
 
 .info .max-width .left{
-    width: 45%;
+    width: 100%;
     display: inline-block;
     text-align: center;
-    
+   
 }
 
 
@@ -277,20 +296,62 @@ html{
 footer
 {
  
-    background: #111;
+    background: rgb(2, 2, 2);
     padding: 20px 23px;
     color: #fff;
+    display: flex;  
+    align-items: center;
 }
 
-footer span {
-    color:  white;
-    font-size: 20px;
-    font-weight: 500;
+footer .one
+{
+    width: 33%;
+    font-size:60px ;
+    font-weight: 800;
+    font-family: Ananda;
+}
+footer .two
+{
+    width: 33%;
+    text-align: center;
+    font-family: Biko;  
 }
 
-footer span a {
-    color: crimson;
+footer .two h3{
+    font-size: 35px;
+    font-weight: 600;
 }
+
+footer .three
+{
+    width: 33%;
+    text-align: right;
+    
+    
+}
+
+footer .three .menu{
+    margin-top: 0px;
+}
+
+footer .three li
+{
+    list-style: none;
+    margin-top: 5px;
+}
+
+footer .three a {
+    color: white;
+    font-family: Biko;
+    font-size: 25px;
+}
+
+footer .three a:hover {
+    color: orangered;
+    font-family: Biko;
+    font-size:27px ;
+}
+
 
 .btn{
 
