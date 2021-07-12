@@ -240,73 +240,39 @@ footer .three a:hover {
     font-size:27px ;
 }
 
+.btn{
 
-/* Ancien partie */
-#map
-{
-    height: 500px ;
-    width:  500px;
-}
-.menu
-{
-    margin-top: 50px;
-}
-.plat-content .Plat
-{
-    
-    width: calc(33% - 50px) ;
-    height: 100px;
+    position: fixed;
+    height: 45px;
+    width: 42px;
     background: crimson;
-    color: white;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
     border-radius: 6px;
-    text-align: center;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      transition: all 0.5s ease;  
+    opacity: 0;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
 }
-.Plat:hover{
-    font-size : 0px;
-    background: #222;
-   
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
+}
+.btn.end{
     
-   
-}
-
-.Title{
-  
-    font-size:  30px;
-  
-    
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;  
-}
-
-.Plat:hover > .Title{
-    font-size: 0;
-    display: none;
-    cursor: pointer;
-}
-
-.text {
-    display: none;
-    transition: all 0.5s ease;  
-}
-
-
-.Plat:hover > .text{
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
+    bottom: 30px;
+    right: 250px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
 }
 
 

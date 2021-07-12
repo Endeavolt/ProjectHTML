@@ -370,12 +370,21 @@ footer .three a:hover {
     cursor: pointer;
     opacity: 0;
     pointer-events: auto;
+    transition:  all 0.3s ease;
 }
 
 .btn.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
+    transition:  all 0.3s ease;
+}.btn.end{
+    
+    bottom: 30px;
+    right: 250px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
 }
 
 /* Ancien partie */

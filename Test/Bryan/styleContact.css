@@ -336,75 +336,6 @@ footer .three a:hover {
 }
 
 
-/* Ancien partie */
-#map
-{
-    height: 550px ;
-    width:  900px;
-    margin-left: 200px;
-}
-.menu
-{
-    margin-top: 50px;
-}
-.plat-content .Plat
-{
-    
-    width: calc(33% - 50px) ;
-    height: 100px;
-    background: crimson;
-    color: white;
-    border-radius: 6px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      transition: all 0.5s ease;  
-}
-.Plat:hover{
-    font-size : 0px;
-    background: #222;
-   
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-   
-}
-
-.Title{
-  
-    font-size:  30px;
-  
-    
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;  
-}
-
-.Plat:hover > .Title{
-    font-size: 0;
-    display: none;
-    cursor: pointer;
-}
-
-.text {
-    display: none;
-    transition: all 0.5s ease;  
-}
-
-
-.Plat:hover > .text{
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-}
-
 /* Contact styling code */
 
 
@@ -518,3 +449,36 @@ footer .three a:hover {
 
 
 /* footer section styling */
+.btn{
+
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
+}
+
+.btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
+}.btn.end{
+    
+    bottom: 30px;
+    right: 250px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
+}

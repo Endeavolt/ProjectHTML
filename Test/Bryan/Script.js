@@ -10,6 +10,11 @@ $(document).ready(function(){
       }else{
           $('.btn').removeClass("show");
       }
+      if(this.scrollY > 1980 ){
+        $('.btn').addClass("end");
+    }else{
+        $('.btn').removeClass("end");
+    }
   });
   
   // slide-up script
