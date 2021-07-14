@@ -433,3 +433,7 @@ footer .three a:hover {
     pointer-events: auto;
     transition:  all 0.3s ease;
 }
+
+.menu {
+    margin-top: 50px;
+}
