@@ -133,7 +133,17 @@ html{
     height: 532px;
     width:35% ;
     margin-left: 15px;
-   display: grid;
+    display:  grid;
+    align-items: center;
+    transition: all 0.3s ease ;
+   
+}
+.cuisine .photoblock .right:hover
+{
+    height: 600px;
+    width:45% ;
+    margin-left: 15px;
+    display:  grid;
     align-items: center;
   
    
@@ -143,12 +153,34 @@ html{
 {
     padding-top: 15px;
     margin-bottom: 15px;
+    transition: all 0.3s ease ;
 }
+
+.cuisine .photoblock .right img:hover
+{
+    padding-top: 15px;
+    margin-bottom: 15px;
+    border-color: white;
+    border: solid 5px;
+    border-radius: 10px;
+    width: 100%;
+    height:150%;
+ 
+}
+
 
 .cuisine .photoblock .left
 {
     width: 65%;
+    transition: all 0.3s ease ;
 }
+
+.cuisine .photoblock .left:hover
+{
+    width: 85%;
+    
+}
+
 footer
 {
  
@@ -162,7 +194,7 @@ footer
 footer .one
 {
     width: 33%;
-    font-size:45px ;
+    font-size:60px ;
     font-weight: 800;
     font-family: Ananda;
 }
@@ -199,77 +231,48 @@ footer .three li
 footer .three a {
     color: white;
     font-family: Biko;
-    font-size: 18px;
-}
-
-
-
-/* Ancien partie */
-#map
-{
-    height: 500px ;
-    width:  500px;
-}
-.menu
-{
-    margin-top: 50px;
-}
-.plat-content .Plat
-{
-    
-    width: calc(33% - 50px) ;
-    height: 100px;
-    background: crimson;
-    color: white;
-    border-radius: 6px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      transition: all 0.5s ease;  
-}
-.Plat:hover{
-    font-size : 0px;
-    background: #222;
-   
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-   
-}
-
-.Title{
-  
-    font-size:  30px;
-  
-    
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;  
-}
-
-.Plat:hover > .Title{
-    font-size: 0;
-    display: none;
-    cursor: pointer;
-}
-
-.text {
-    display: none;
-    transition: all 0.5s ease;  
-}
-
-
-.Plat:hover > .text{
-    display: block;
     font-size: 25px;
-    font-weight: 500;
+}
+
+footer .three a:hover {
+    color: orangered;
+    font-family: Biko;
+    font-size:27px ;
+}
+
+.btn{
+
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
     text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
+}
+
+.btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
+}
+.btn.end{
+    
+    bottom: 30px;
+    right: 250px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:  all 0.3s ease;
 }
 
 

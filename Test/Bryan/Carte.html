@@ -3,13 +3,14 @@
     <head>
         <title>Kenan Restaurent</title>
         <link rel= "stylesheet" href="styleCarte.css">
-        <script src="Script.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
 
     </head>
     <body>
-        <!-- <div class="btn-scroll">
-            <img src="Images/Burger.jpeg" alt="">
-        </div> -->
+        <div class="btn">
+            <!-- <img src="Images/Burger.jpeg" alt=""> -->
+        </div>
 
     <section class="accueil" id ="acceuil">
         <nav class="navbar">
@@ -17,8 +18,8 @@
                 <a href="index.html">Nanek</a>
             </div>
             <ul class="menu">
-                <li><a href="index.html">Restaurent</a></li>
-                <li><a href="Carte - Copie.html">La Carte</a> </li>
+                <li><a href="index.html">Restaurant</a></li>
+                <li><a href="Carte.html">La Carte</a> </li>
                 <li><a href="Galerie.html">La Galerie</a></li>
                 <li><a href= "Contact.html">Contactez nous</a></li>
             </ul> 
@@ -60,85 +61,94 @@
         </div>
     </section>
     <section class="info" id=#info>
-        <div class="max-width">
-            <div class="column right">
-                <h3>Info Pratique</h3>
-                <div class="information">
-                    <div class="title">
-                        Moyen de paiments
+        <div class="side one">
+            <div class="max-width">
+
+                <div class="column right">
+                    <h3>Info Pratique</h3>
+                    <div class="information">
+                        <div class="title">
+                            Moyen de paiments
+                        </div>
+                        <div class="content">
+                            Carte bleu, chèque, espèce, visa 
+                        </div>
                     </div>
-                    <div class="content">
-                        Carte bleu, chèque, espèce, visa 
+                    <div class="information">
+                        <div class="title">
+                            Type de restaurant
+                        </div>
+                        <div class="content">
+                            Restaurent 
+                        </div>
                     </div>
-                </div>
-                <div class="information">
-                    <div class="title">
-                        Type de restaurant
+                    <div class="information">
+                        <div class="title">
+                            Cuisine
+                        </div>
+                        <div class="content">
+                            Familliale, fait maison, à partage 
+                        </div>
                     </div>
-                    <div class="content">
-                        Restaurent 
-                    </div>
-                </div>
-                <div class="information">
-                    <div class="title">
-                        Cuisine
-                    </div>
-                    <div class="content">
-                        Familliale, fait maison, à partage 
-                    </div>
-                </div>
-                <div class="information">
-                    <div class="title">
-                        Services
-                    </div>
-                    <div class="content">
-                        Parking, événement, vente à emporté
+                    <div class="information">
+                        <div class="title">
+                            Services
+                        </div>
+                        <div class="content">
+                            Parking, événement, vente à emporté
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="column left">
-                <h3>Horaire</h3>
-                <div class="content">
-                    <div class="dayhour">
-                        <div class="day">
-                            Lundi
+        </div>
+        <div class="side two">
+            <div class="max-width"> 
+
+                <div class="column left">
+                    
+                    <h3>Horaire</h3>
+                    <div class="content">
+                        <div class="dayhour">
+                            <div class="day">
+                                Lundi
+                            </div>
+                            <div class="hour">
+                                18h00 - 23h00
+                            </div>
                         </div>
-                        <div class="hour">
-                            18h00 - 23h00
+                        <div class="dayhour">
+                            
+                            <div class="day">
+                                Mardi
+                            </div>
+                            <div class="hour">
+                                18h00 - 23h00
+                            </div>
                         </div>
-                    </div>
-                    <div class="dayhour">
-                        <div class="day">
-                            Mardi
+                        <div class="dayhour">
+                            <div class="day">
+                                Mercredi
+                            </div>
+                            <div class="hour">
+                                18h00 - 23h00
+                            </div>
                         </div>
-                        <div class="hour">
-                            18h00 - 23h00
+                        <div class="dayhour">
+                            <div class="day">
+                                Jeudi
+                            </div>
+                            <div class="hour">
+                                18h00 - 23h00
+                            </div>
                         </div>
-                    </div>
-                    <div class="dayhour">
-                        <div class="day">
-                            Mercredi
+                        <div class="dayhour">
+                            <div class="day">
+                                Vendredi
+                            </div>
+                            <div class="hour">
+                                18h00 - 23h00
+                            </div>
                         </div>
-                        <div class="hour">
-                            18h00 - 23h00
-                        </div>
-                    </div>
-                    <div class="dayhour">
-                        <div class="day">
-                            Jeudi
-                        </div>
-                        <div class="hour">
-                            18h00 - 23h00
-                        </div>
-                    </div>
-                    <div class="dayhour">
-                        <div class="day">
-                            Vendredi
-                        </div>
-                        <div class="hour">
-                            18h00 - 23h00
-                        </div>
-                    </div>
                         <div class="dayhour">
                             <div class="day">
                                 Samedi
@@ -154,7 +164,8 @@
                             <div class="hour">
                                 18h00 - 23h00
                             </div>
-                    </div> 
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,11 +188,28 @@
         </div>
     </section>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi, mollitia nihil eligendi aliquid non deserunt expedita inventore, iste sed nobis, porro quidem soluta itaque fugiat officiis id. Minima, expedita.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi, mollitia nihil eligendi aliquid non deserunt expedita inventore, iste sed nobis, porro quidem soluta itaque fugiat officiis id. Minima, expedita.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi, mollitia nihil eligendi aliquid non deserunt expedita inventore, iste sed nobis, porro quidem soluta itaque fugiat officiis id. Minima, expedita.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi, mollitia nihil eligendi aliquid non deserunt expedita inventore, iste sed nobis, porro quidem soluta itaque fugiat officiis id. Minima, expedita.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi, mollitia nihil eligendi aliquid non deserunt expedita inventore, iste sed nobis, porro quidem soluta itaque fugiat officiis id. Minima, expedita.</p>
-    </body>
     <footer>
-        <span> Createad by <a href="#">Bryan Bachelet</a> |  2021 All right reserved. </span>
+        <div class="column one">
+            Nanek
+        </div>
+        <div class="column two">
+            <h3>Accès / Contact</h3> <br>
+            56 rue de Kino, 56400 Pluneret <br>
+            02 75 65 23 01
+        </div>
+        <div class="column three">
+            <ul class="menu">
+                <li><a href="index.html">Restaurant</a></li>
+                <li><a href="Carte.html">La Carte</a> </li>
+                <li><a href="Galerie.html">La Galerie</a></li>
+                <li><a href= "Contact.html">Contactez nous</a></li>
+            </ul> 
+        </div>
+
+       
     </footer>
+    <script src="Script.js"> </script>
+    </body>
 
 
 </html>
