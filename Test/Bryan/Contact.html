@@ -6,6 +6,8 @@
         <meta charset=" UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        
 
     </head>
     <body>
@@ -31,33 +33,30 @@
 
                 <div class="column right">
                     <div class="titreContact">Vous souhaitez nous contacter ?</div>
-                    <form action=#>
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject" required>
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
-                            </div>
-                            <div class="button">
-                                <button type = submit onclick="button()"  >Send Message</button>
-                            </div>
-                    </form>    
+                        <form id ="contact-form">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" name="to_name" placeholder="Name" required>
+                                </div>
+                                
+                                <div class="field textarea">
+                                    <textarea cols="30" rows="10" name="message" placeholder="Text" required></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type = submit value="Send">Send Message</button>
+                                </div>
+                        </form>    
+                    </div>
                 </div>
                 <div class="column left">
-                    <div id="map"> </div>
+                    <div id='map'> </div>
                     <script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmFvtHOiOU8RLf8LQzHWCX_1XK4ZAROJU&callback=initMap&libraries=&v=weekly"async></script>
-                               
+                    
+                    
                 </div>
             </div>
         </section>
+      
         <section class="info" id=#info>
             <div class="side one">
                 <div class="max-width">

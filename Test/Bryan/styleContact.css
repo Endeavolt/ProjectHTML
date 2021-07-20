@@ -76,53 +76,6 @@ html{
     margin-bottom: 50px;
 }
 
-.presentation{
-   
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 600px;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-.presentation .max-width{
-    max-width: 1900px;
-    padding: 0px;
-    /* margin:  auto; */
-    display: flex;
-}
-.presentation .max-width .right
-{
-    /* width: 50%;  */
-    margin-left: 150px;
-}
-.presentation .right {
-    object-fit: cover;
-    border-radius: 6px;
-    margin-top: 0px;
-  
-}
-.presentation .max-width .left{
-
-    display: inline-block;
-    margin-left: 0px;
-    max-width: 50%;
-}
-
-.presentation .right .title
-{
-    font-size : 45px;
-    font-weight:800px ;
-    color: rgb(241, 135, 58);
-    padding-bottom: 30px;
-}
- 
-.presentation .left .content{
-    
-    display: inline-block;
-    text-align: justify;
-}
 
 /* Infomation section*/
 
@@ -339,13 +292,54 @@ footer .three a:hover {
 /* Contact styling code */
 
 
+.max-width{
+    max-width: 1300px;
+    padding: 80px;
+    margin:  auto;
+    display: flex;
+}
+.presentation{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
 
 
 .presentation .right {
-    width: 100%;
-    margin-right: 0px;
-    margin-top: 30px;
+    width: 45%;
+    margin-left: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 0px;
+  
 }
+.presentation  .left{
+    width: 45%;
+    display: inline-block;
+    margin-left: 0px;
+    
+}
+
+.presentation .right .title
+{
+    font-size : 45px;
+    font-weight:800px ;
+    color: rgb(241, 135, 58);
+    padding-bottom: 30px;
+}
+ 
+.presentation .left .content{
+    
+    display: inline-block;
+    text-align: justify;
+}
+
+
 .presentation .right .titreContact{
     font-size: 35px;
     font-weight: 600;
@@ -353,10 +347,10 @@ footer .three a:hover {
     text-align: center;
    
 }
-.presentation .right .left p{
+.presentation .left p{
     text-align: justify;
 }
-.presentation .right .left .icon{
+.presentation  .left .icon{
     margin: 10px 0;
 }
 
@@ -382,9 +376,6 @@ footer .three a:hover {
     color: #333;
 }
 
-.presentation .right .fields{
-    display: flex;
-}
 
 .presentation .right .field,
 .presentation .right form .fields .field
@@ -395,7 +386,8 @@ footer .three a:hover {
 }
 
 .presentation .right form .textarea{
-    height: 140px;
+    height: 150px;
+
 }
 
 .presentation .right form .name{
@@ -481,4 +473,10 @@ footer .three a:hover {
     opacity: 1;
     pointer-events: auto;
     transition:  all 0.3s ease;
+}
+
+#map
+{
+    height: 500px ;
+    width:  500px;
 }
