@@ -30,10 +30,11 @@ html{
 
 .accueil
 {
-    background-image:url(Images/Burger.jpeg) ;
+    background-image:url(Images/Retouchées/Img-2.jpg) ;
     background-repeat: no-repeat;  
+    background-size: cover;
     color: white;
-    height: 800px;
+    height: 950px
    
 }
 
@@ -43,8 +44,10 @@ html{
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    max-height: 150px;
     z-index: 999;
     transition:  all 0.3s ease;
+
 
 }
 
@@ -55,15 +58,16 @@ html{
     transition:  all 0.3s ease;
 }
 
-.accueil .title a{
 
-    font-size: 100px;
-    font-weight: 600;
-    font-family: Ananda;
-}
 .accueil .title{
-    padding-left:50px ;
-    padding-top: 15px;
+    padding-left:100px ;
+    padding-top: 25px;
+    
+}
+
+.accueil .title img{
+    width: 350px;
+    height: 150px;
 }
 
 .accueil .navbar a{
@@ -81,10 +85,10 @@ html{
 }
 .accueil .navbar li a
 {
-    font-size:30px;
+    font-size:25px;
     font-weight: 800;
     font-family: Biko;
-    margin-left: 50px;
+    margin-left: 100px;
     transition: color 0.3s ease ;
 }
 
@@ -103,9 +107,9 @@ html{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 600px;
-    background: black;
-    color: white;
+    height: 500px;
+    background: white;
+    color: black;
   
 }
 .presentation .max-width .right
@@ -114,8 +118,8 @@ html{
    
 }
 .presentation .right img{
-    height: 450px ;
-    width:  450px;
+    height: 400px ;
+    width:  400px;
     object-fit: cover;
     border-radius: 6px;
     margin-top: 5px;
@@ -124,21 +128,23 @@ html{
 .presentation .max-width .left{
     width: 45%;
     display: inline-block;
+  
 }
 
 .presentation .left .title
 {
-    font-size : 45px;
+    font-size : 35px;
     font-weight:800px ;
     color: rgb(241, 135, 58);
-    padding-bottom: 30px;
+    padding-top: 60px;
+     padding-bottom: 20px;
 }
  
 .presentation .left .content{
     
     display: inline-block;
     text-align: justify;
-    font-size: 21px;
+    font-size: 18px;
     font-family: Monsterrat-Light;
 }
 
@@ -152,7 +158,7 @@ html{
     display: flex;
 
     color: white;
-
+    max-height: 450px;
 }
 
 .info .one {
@@ -182,7 +188,7 @@ html{
 }
 .info .max-width h3
 {
-    font-size: 70px;
+    font-size: 60px;
     color: tomato;
     align-items: center;
 }
@@ -194,7 +200,7 @@ html{
 }
 
 .info .max-width .information  {
-    font-size: 25px;
+    font-size: 19px;
    margin-top: 20px;
 }
 
@@ -205,7 +211,7 @@ html{
 
 .info .max-width .right .information .content  {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
 }
 
@@ -219,7 +225,7 @@ html{
 
 .info .max-width .left .content
 {
-    font-size: 25px;
+    font-size: 18px;
 }
 .info .max-width .left .content .dayhour 
 {
@@ -250,55 +256,7 @@ html{
 }
 
 
-/* Contact Partie */
-.contact{
-    /* align-items: center; */
-    background-color: #222;
-    color: white;
-    height: 600px;
-}
 
-.contact .max-width
-{
-    display: block;
-}
-
-.contact .max-width .title
-{
-    text-align: center;
-   
-    font-size : 60px;
-    font-weight:800;
-    color: rgb(241, 135, 58);
-    
-}
-
-.contact .max-width .content
-{
-    background-color: rgb(27, 27, 27);
-    color: white;
-    
-}
-
-.contact .max-width ul
-{   
-    text-align: center;
-    height: 400px;
-    background-color: #222;
-}
-
-.contact .max-width li{
-    margin-top: 35px;
-}
-
-.contact .max-width .content a{
-    color: white;
-}
-
-.contact .max-width .content li a{
-    font-size: 25px;
-    font-weight: 500px;
-}
 
 footer
 {
@@ -308,6 +266,7 @@ footer
     color: #fff;
     display: flex;  
     align-items: center;
+    max-height: 150px;
 }
 
 footer .one

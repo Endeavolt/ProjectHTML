@@ -249,8 +249,7 @@ footer .three a:hover {
 
 .max-width{
     max-width: 1300px;
-    padding: 80px;
-    margin:  auto;
+    margin-bottom: 10px;
     display: flex;
 }
 .presentation{
@@ -276,8 +275,8 @@ footer .three a:hover {
 .presentation  .left{
     width: 45%;
     display: inline-block;
-    margin-left: 0px;
-    
+    /* margin-left: 0px; */
+    padding-left: 250px;
 }
 
 .presentation .right .title
@@ -335,7 +334,7 @@ footer .three a:hover {
 .presentation .right .field,
 .presentation .right form .fields .field
 {
-    height: 45px;
+    height: 150px;
     width: 100%;
     margin-bottom: 15px;
 }
@@ -346,7 +345,8 @@ footer .three a:hover {
 }
 
 .presentation .right form .name{
- margin-right: 10px;   
+ margin-right: 10px;
+ max-height: 45px; 
 }
 
 .presentation .right form .email{
@@ -432,6 +432,6 @@ footer .three a:hover {
 
 #map
 {
-    height: 400px ;
-    width:  400px;
+    height: 500px ;
+    width:  900px;
 }
