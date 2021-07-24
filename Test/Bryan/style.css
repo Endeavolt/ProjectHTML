@@ -12,6 +12,10 @@
     font-family: Monsterrat-Regular;
     src: url(Police/Montserrat-Regular.ttf);
 }
+@font-face {
+    font-family: Monsterrat-Light;
+    src: url(Police/Montserrat-Light.ttf);
+}
 
 *{
     margin: 0;
@@ -102,6 +106,7 @@ html{
     height: 600px;
     background: black;
     color: white;
+  
 }
 .presentation .max-width .right
 {
@@ -133,6 +138,8 @@ html{
     
     display: inline-block;
     text-align: justify;
+    font-size: 21px;
+    font-family: Monsterrat-Light;
 }
 
 /* Infomation section*/
@@ -309,6 +316,7 @@ footer .one
     font-size:60px ;
     font-weight: 800;
     font-family: Ananda;
+    margin-left: 70px;
 }
 footer .two
 {
@@ -322,11 +330,12 @@ footer .two h3{
     font-weight: 600;
 }
 
+
 footer .three
 {
     width: 33%;
     text-align: right;
-    
+    margin-right: 80px;
     
 }
 

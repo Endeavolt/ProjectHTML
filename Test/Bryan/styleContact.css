@@ -157,7 +157,7 @@ html{
 
 .info .max-width .left .content
 {
-    font-size: 25px;
+    font-size: 20px;
 }
 .info .max-width .left .content .dayhour 
 {
@@ -180,54 +180,7 @@ html{
 }
 
 
-/* Contact Partie */
-.contact{
-    align-items: center;
-    background-color: #222;
-    color: white;
-    height: 600px;
-}
 
-.contact .max-width
-{
-    display: block;
-}
-
-.contact .max-width .title
-{
-    text-align: center;
-   
-    font-size : 60px;
-    font-weight:800;
-    color: rgb(241, 135, 58);
-    
-}
-.contact .max-width .content
-{
-    background-color: rgb(27, 27, 27);
-    color: white;
-    
-}
-
-.contact .max-width ul
-{   
-    text-align: center;
-    height: 400px;
-    background-color: #222;
-}
-
-.contact .max-width li{
-    margin-top: 35px;
-}
-
-.contact .max-width .content a{
-    color: white;
-}
-
-.contact .max-width .content li a{
-    font-size: 25px;
-    font-weight: 500px;
-}
 
 footer
 {
@@ -245,6 +198,7 @@ footer .one
     font-size:60px ;
     font-weight: 800;
     font-family: Ananda;
+    margin-left: 70px;
 }
 footer .two
 {
@@ -258,11 +212,12 @@ footer .two h3{
     font-weight: 600;
 }
 
+
 footer .three
 {
     width: 33%;
     text-align: right;
-    
+    margin-right: 80px;
     
 }
 
@@ -477,6 +432,6 @@ footer .three a:hover {
 
 #map
 {
-    height: 500px ;
-    width:  500px;
+    height: 400px ;
+    width:  400px;
 }

@@ -356,6 +356,7 @@ footer .one
     font-size:60px ;
     font-weight: 800;
     font-family: Ananda;
+    margin-left: 70px;
 }
 footer .two
 {
@@ -369,14 +370,14 @@ footer .two h3{
     font-weight: 600;
 }
 
+
 footer .three
 {
     width: 33%;
     text-align: right;
-    
+    margin-right: 80px;
     
 }
-
 footer .three .menu{
     margin-top: 0px;
 }
