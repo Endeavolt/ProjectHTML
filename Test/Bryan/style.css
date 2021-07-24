@@ -75,7 +75,7 @@ html{
     
 }
 .accueil .navbar.sticky a{
-    color: tomato;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -261,9 +261,9 @@ html{
 footer
 {
  
-    background: rgb(2, 2, 2);
+    background: rgb(255, 255, 255);
     padding: 20px 23px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     display: flex;  
     align-items: center;
     max-height: 150px;
@@ -309,7 +309,7 @@ footer .three li
 }
 
 footer .three a {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Biko;
     font-size: 25px;
 }
