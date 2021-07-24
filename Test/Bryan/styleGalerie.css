@@ -9,8 +9,13 @@
 }
 
 @font-face {
-    font-family: Monsterrat-Regular;
-    src: url(Police/Montserrat-Regular.ttf);
+    font-family: Monsterrat-SemiBold;
+    src: url(Police/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Monsterrat-Light;
+    src: url(Police/Montserrat-Light.ttfz);
 }
 
 *{
@@ -51,9 +56,9 @@ html{
 
 .accueil .title a{
 
-    font-size: 100px;
+    font-size: 120px;
     font-weight: 600;
-    font-family: Ananda;
+    font-family: Monsterrat-SemiBold;;
 }
 .accueil .title{
     padding-left:50px ;
@@ -197,6 +202,7 @@ footer .one
     font-size:60px ;
     font-weight: 800;
     font-family: Ananda;
+    margin-left: 70px;
 }
 footer .two
 {
@@ -210,11 +216,12 @@ footer .two h3{
     font-weight: 600;
 }
 
+
 footer .three
 {
     width: 33%;
     text-align: right;
-    
+    margin-right: 80px;
     
 }
 

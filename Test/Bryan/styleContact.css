@@ -76,53 +76,6 @@ html{
     margin-bottom: 50px;
 }
 
-.presentation{
-   
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 600px;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-.presentation .max-width{
-    max-width: 1900px;
-    padding: 0px;
-    /* margin:  auto; */
-    display: flex;
-}
-.presentation .max-width .right
-{
-    /* width: 50%;  */
-    margin-left: 150px;
-}
-.presentation .right {
-    object-fit: cover;
-    border-radius: 6px;
-    margin-top: 0px;
-  
-}
-.presentation .max-width .left{
-
-    display: inline-block;
-    margin-left: 0px;
-    max-width: 50%;
-}
-
-.presentation .right .title
-{
-    font-size : 45px;
-    font-weight:800px ;
-    color: rgb(241, 135, 58);
-    padding-bottom: 30px;
-}
- 
-.presentation .left .content{
-    
-    display: inline-block;
-    text-align: justify;
-}
 
 /* Infomation section*/
 
@@ -204,7 +157,7 @@ html{
 
 .info .max-width .left .content
 {
-    font-size: 25px;
+    font-size: 20px;
 }
 .info .max-width .left .content .dayhour 
 {
@@ -227,54 +180,7 @@ html{
 }
 
 
-/* Contact Partie */
-.contact{
-    align-items: center;
-    background-color: #222;
-    color: white;
-    height: 600px;
-}
 
-.contact .max-width
-{
-    display: block;
-}
-
-.contact .max-width .title
-{
-    text-align: center;
-   
-    font-size : 60px;
-    font-weight:800;
-    color: rgb(241, 135, 58);
-    
-}
-.contact .max-width .content
-{
-    background-color: rgb(27, 27, 27);
-    color: white;
-    
-}
-
-.contact .max-width ul
-{   
-    text-align: center;
-    height: 400px;
-    background-color: #222;
-}
-
-.contact .max-width li{
-    margin-top: 35px;
-}
-
-.contact .max-width .content a{
-    color: white;
-}
-
-.contact .max-width .content li a{
-    font-size: 25px;
-    font-weight: 500px;
-}
 
 footer
 {
@@ -292,6 +198,7 @@ footer .one
     font-size:60px ;
     font-weight: 800;
     font-family: Ananda;
+    margin-left: 70px;
 }
 footer .two
 {
@@ -305,11 +212,12 @@ footer .two h3{
     font-weight: 600;
 }
 
+
 footer .three
 {
     width: 33%;
     text-align: right;
-    
+    margin-right: 80px;
     
 }
 
@@ -339,13 +247,54 @@ footer .three a:hover {
 /* Contact styling code */
 
 
+.max-width{
+    max-width: 1300px;
+    padding: 80px;
+    margin:  auto;
+    display: flex;
+}
+.presentation{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
 
 
 .presentation .right {
-    width: 100%;
-    margin-right: 0px;
-    margin-top: 30px;
+    width: 45%;
+    margin-left: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 0px;
+  
 }
+.presentation  .left{
+    width: 45%;
+    display: inline-block;
+    margin-left: 0px;
+    
+}
+
+.presentation .right .title
+{
+    font-size : 45px;
+    font-weight:800px ;
+    color: rgb(241, 135, 58);
+    padding-bottom: 30px;
+}
+ 
+.presentation .left .content{
+    
+    display: inline-block;
+    text-align: justify;
+}
+
+
 .presentation .right .titreContact{
     font-size: 35px;
     font-weight: 600;
@@ -353,10 +302,10 @@ footer .three a:hover {
     text-align: center;
    
 }
-.presentation .right .left p{
+.presentation .left p{
     text-align: justify;
 }
-.presentation .right .left .icon{
+.presentation  .left .icon{
     margin: 10px 0;
 }
 
@@ -382,9 +331,6 @@ footer .three a:hover {
     color: #333;
 }
 
-.presentation .right .fields{
-    display: flex;
-}
 
 .presentation .right .field,
 .presentation .right form .fields .field
@@ -395,7 +341,8 @@ footer .three a:hover {
 }
 
 .presentation .right form .textarea{
-    height: 140px;
+    height: 150px;
+
 }
 
 .presentation .right form .name{
@@ -483,6 +430,8 @@ footer .three a:hover {
     transition:  all 0.3s ease;
 }
 
-.menu {
-    margin-top: 50px;
+#map
+{
+    height: 400px ;
+    width:  400px;
 }
