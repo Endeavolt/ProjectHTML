@@ -7,11 +7,22 @@
     font-family: Biko;
     src: url(Police/Biko_Regular.otf);
 }
+@font-face {
+    font-family: Biko-Bold;
+    src: url(Police/Biko_Bold.otf);
+}
+
 
 @font-face {
     font-family: Monsterrat-Regular;
     src: url(Police/Montserrat-Regular.ttf);
 }
+@font-face {
+    font-family: Monsterrat-Light;
+    src: url(Police/Montserrat-Light.ttf);
+}
+
+
 
 *{
     margin: 0;
@@ -23,12 +34,14 @@ html{
     scroll-behavior:smooth;
 }
 
+
 .accueil
 {
-    background-image:url(Images/Burger.jpeg) ;
+    background-image:url(Images/Retouchées/Img-2.jpg) ;
     background-repeat: no-repeat;  
+    background-size: cover;
     color: white;
-    height: 800px;
+    height: 950px
    
 }
 
@@ -36,34 +49,53 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    max-height: 150px;
+    z-index: 999;
+    transition:  all 0.3s ease;
+
+
 }
 
-.accueil .title a{
-
-    font-size: 100px;
-    font-weight: 600;
-    font-family: Ananda;
+.accueil .navbar.sticky
+{
+    background: black;
+    color: white; 
+    transition:  all 0.3s ease;
 }
+
+
 .accueil .title{
-    padding-left:50px ;
-    padding-top: 15px;
+    padding-left:100px ;
+    padding-top: 25px;
+    
+}
+
+.accueil .title img{
+    width: 325px;
+    height: 150px;
 }
 
 .accueil .navbar a{
     color: white;
     
 }
+.accueil .navbar.sticky a{
+    color: white;
+    
+}
+
 .accueil .navbar li{
     display: inline-block;
     list-style: none;
 }
 .accueil .navbar li a
 {
-    font-size:30px;
+    font-size:25px;
     font-weight: 800;
     font-family: Biko;
-    margin-left: 50px;
+    margin-left: 100px;
     transition: color 0.3s ease ;
 }
 
@@ -82,28 +114,39 @@ html{
 .info{
 
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    margin:  auto;
     display: flex;
-    height: 600px;
-    background: rgb(66, 66, 66);
     color: white;
-
+    height: 425px;
+    max-height: 450px;
+    background-color: rgb(41, 41, 48);
 }
 
-.info  .one {
+.info .one {
     width: 50%;
-    height: 100%;
-    background-color: gray;
+    height: initial;
+  
+    background-color: rgb(41, 41, 48);
    
-    display: flex;
+}
+
+.info .one .right
+{  margin-top: 30px;
+    z-index: 1;
+}
+.info .one img {
+    margin-top: 15px;
+    position:absolute;
     
+    left: 10px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.1;
 }
 
 .info .two {
     width: 50%;
-    height: 100%;
+    height: initial;
     background-color:black;
    
     display: flex;
@@ -116,13 +159,15 @@ html{
     margin:  auto;
     display: flex;
   
-    width: 500px;
+    width: 800px;
 }
 .info .max-width h3
 {
-    font-size: 70px;
-    color: tomato;
+    font-size: 50px;
+    color: white;
     align-items: center;
+    font-family:  Biko-Bold ;
+    font-weight: 500;
 }
 .info .max-width .right{
     width: 100%;
@@ -132,18 +177,19 @@ html{
 }
 
 .info .max-width .information  {
-    font-size: 25px;
+    font-family:Monsterrat-Light ;
    margin-top: 20px;
 }
 
-.info .max-width .right .information .title
-{
-    font-weight: 650;
+.info .max-width .right .information .title  {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .info .max-width .right .information .content  {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: lighter;
 }
 
@@ -153,43 +199,46 @@ html{
     text-align: center;
    
 }
-
-
-.info .max-width .left .content
+.info .max-width .left h3
 {
-    font-size: 20px;
+    letter-spacing: 2px;
+    font-size: 55px;
+    padding-bottom: 15px;
 }
-.info .max-width .left .content .dayhour 
+
+
+.info .max-width .left .week,
+.info .max-width .left .end
 {
-    width: 100%;
-    display: flex;
-    margin-top: 25px;
-    text-align: center;
-}
-.info .max-width .left .content .dayhour .day {
-    
-    font-weight:600;
-    width: 45%;
-    margin-right: 25px;
-   
-}
-.info .max-width .left .content .dayhour .hour {
-
-    width: 45%;
-    margin-left: 25px;
+    font-family: Monsterrat-Light;
+    margin-top: 20px;
 }
 
+.info .max-width .left .day
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.info .max-width .left .hour
+{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
 
 
 
 footer
 {
  
-    background: rgb(255, 255, 255);
+    background: black;
     padding: 20px 23px;
-    color: rgb(0, 0, 0);
+    color: white;
     display: flex;  
     align-items: center;
+    max-height: 150px;
+    
 }
 
 footer .one
@@ -199,7 +248,15 @@ footer .one
     font-weight: 800;
     font-family: Ananda;
     margin-left: 70px;
+  
 }
+footer .one img
+{
+    margin-top: 30px;
+    width: 175px;
+    height: 75px;
+}
+
 footer .two
 {
     width: 33%;
@@ -228,13 +285,13 @@ footer .three .menu{
 footer .three li
 {
     list-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 footer .three a {
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: Biko;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 footer .three a:hover {
@@ -393,6 +450,50 @@ footer .three a:hover {
 {    color:crimson;
     background: none;
 }
+
+
+/* Avis section styling */
+
+.avis
+{
+    min-height: 300px;
+    max-height: 400px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avis .max-width
+{
+    display: inline-block;   
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.avis .name
+{
+    font-family: Biko;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.avis .objet
+{
+    font-family: Biko;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.avis .content 
+{
+    font-size: 18px;
+    font-family: Monsterrat-Light;
+}
+
+
 
 
 /* footer section styling */
