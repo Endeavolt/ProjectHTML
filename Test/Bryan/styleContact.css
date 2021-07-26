@@ -7,11 +7,22 @@
     font-family: Biko;
     src: url(Police/Biko_Regular.otf);
 }
+@font-face {
+    font-family: Biko-Bold;
+    src: url(Police/Biko_Bold.otf);
+}
+
 
 @font-face {
     font-family: Monsterrat-Regular;
     src: url(Police/Montserrat-Regular.ttf);
 }
+@font-face {
+    font-family: Monsterrat-Light;
+    src: url(Police/Montserrat-Light.ttf);
+}
+
+
 
 *{
     margin: 0;
@@ -439,6 +450,50 @@ footer .three a:hover {
 {    color:crimson;
     background: none;
 }
+
+
+/* Avis section styling */
+
+.avis
+{
+    min-height: 300px;
+    max-height: 400px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avis .max-width
+{
+    display: inline-block;   
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.avis .name
+{
+    font-family: Biko;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.avis .objet
+{
+    font-family: Biko;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.avis .content 
+{
+    font-size: 18px;
+    font-family: Monsterrat-Light;
+}
+
+
 
 
 /* footer section styling */
