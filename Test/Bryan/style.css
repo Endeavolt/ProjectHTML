@@ -119,9 +119,14 @@ html{
     color: black;
   
 }
+.presentation .max-width
+{
+    max-width: 1600px;
+}
+
 .presentation .max-width .right
 {
-    width: 45%;
+    width: 30%;
    
 }
 .presentation .right img{
@@ -133,7 +138,7 @@ html{
   
 }
 .presentation .max-width .left{
-    width: 45%;
+    width: 50%;
     display: inline-block;
   
 }
@@ -143,7 +148,7 @@ html{
     font-size : 40px;
     font-weight:800px ;
     color:#959564;
-    padding-top: 45px;
+    
      padding-bottom: 20px;
      font-family: Ananda;
      letter-spacing: 4px;
