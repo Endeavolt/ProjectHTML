@@ -12,10 +12,7 @@ $(document).ready(function(){
     
   });
   
-  // slide-up script
-  $('.btn').click(function(){
-      $('html').animate({scrollTop : 0})
-  });
+
 
 });
 
