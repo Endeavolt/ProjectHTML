@@ -462,9 +462,30 @@ footer .three a:hover {
     background: none;
 }
 .presentation .right .reseau
-{   margin-top: 25px;
+{   margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
     display: flex;
+    text-align: center;
 }
+.presentation .right .reseau a
+{
+    color: black;
+    font-family:Biko ;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.presentation .right .reseau a:hover
+{
+    color: crimson;
+    font-family:Biko ;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 25px;
+}
+
+
 .presentation .right .reseau .one
 { width: 45%;
 }
