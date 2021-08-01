@@ -105,9 +105,7 @@ html{
 .accueil .navbar .menu{
     width: 1000px;
     position: static;
-    margin-bottom: 50px;
 }
-
 
 /* Infomation section*/
 .info{
@@ -308,7 +306,7 @@ footer .three a {
 }
 
 footer .three a:hover {
-    color: orangered;
+    color:  crimson;
     font-family: Biko;
     font-size:27px ;
 }
