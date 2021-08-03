@@ -13,6 +13,12 @@ $(document).ready(function(){
   });
   
 
+   /*Responsive function */
+  $('.menu-btn').click(function()
+  {
+     $('.navbar .menu').toggleClass("active");
+     $('.exit').toggleClass("active");
+  })
 
 });
 
