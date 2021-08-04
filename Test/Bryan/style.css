@@ -108,6 +108,11 @@ html{
     margin-bottom: 50px;
 }
 
+.accueil .navbar .menu-btn
+{
+    opacity: 0%;
+}
+
 .presentation{
    
     display: flex;
@@ -409,6 +414,11 @@ footer .two h3{
 }
 
 
+footer .two .address
+{
+    margin-top: 15px;
+}
+
 footer .three
 {
     width: 33%;
@@ -546,24 +556,38 @@ footer .three a:hover {
 
 
     /* Section Navbar Styling */
+
+    .accueil 
+    {
+        background-position:center;
+        height: 80vh;
+    }
+
     .accueil .title
     {
-        padding-left: 75px;
+        padding-left: 50px;
         padding-top: 20px;
     }
 
     .accueil .title img
     {
-        width: 250px ;
-        height: 100px;
+        width: 150px ;
+        height: 55px;
     }
+    .accueil .navbar
+    {
+        
+        width: 100%;
+    }
+
     .accueil .navbar .menu
     {
         position: fixed;
         left : -100%; 
-        width: 600px; 
+        width: 100%; 
         margin-top: 0px;
         margin-bottom: 0px;
+        
     }
      
     .accueil .navbar .menu.active
@@ -571,10 +595,11 @@ footer .three a:hover {
         background-color: rgb(0, 0, 0);
         left: 0%;
         height:100vh;
-        width: 100%;
+        width: 100vw;
         top: 0;
-        padding-top: 120px;
+        padding-top: 160px;
         position:  fixed;
+        z-index: 998;
        
     }
 
@@ -587,24 +612,28 @@ footer .three a:hover {
     }
     .accueil .menu li a
     {
-        font-size: 40px;
+        font-size: 35px;
         margin-left: 0px;
     }
 
 
+
     .accueil .navbar .menu-btn
     {
-        width: 75px;
-        height: 75px;
-        margin-top: 20px;
-        margin-right: 70px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+       
+        margin-top: 10px;
+        margin-right: 45px;
         object-fit: cover;
+        opacity: 100%;
     }
     
     .accueil .navbar .menu-btn img
     {
-      width: 75px;
-      height: 75px;
+      width: 40px;
+      height: 40px;
     }
     
     .accueil .navbar .menu-btn .exit
@@ -619,7 +648,7 @@ footer .three a:hover {
         opacity: 100%;
         z-index: 999;
         top:75px;
-        margin-left: 25px;
+        margin-left: 0px;
     }
     .accueil .navbar .menu-btn .exit.active img
     {
@@ -629,6 +658,199 @@ footer .three a:hover {
 
     /* Section Presentation styling */
 
+    .presentation
+    {
+        height: 1000px;
+        width: 100vw;
+    }   
+    .presentation .max-width
+    {
+        display: block;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .presentation .max-width .right
+    {
+        width: 100vw;
+    }
+
+    .presentation .max-width .right img 
+    {
+        margin-left: 25px;
+        margin-top: 25px;
+        width: 75%;
+        height: 75%;
+    }
+
+    .presentation .max-width .left
+    {
+        width: 100vw;
+        margin-top: 35px;
+    }
+
+    .presentation .max-width .left .title
+    {
+        font-size: 35px;
+        margin-left: 20px;
+        padding-bottom: 0px;
+    }
+ 
+    .presentation .max-width .left .title .name
+    {
+        font-size: 40px;
+      
+    }
+
+    .presentation .max-width .left .content
+    {
+        display: block;
+        font-size: 15px;
+    }
+
+    .presentation .max-width .left .content p
+    {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+    }
+
+    .presentation .max-width .left .partage
+    {
+        display: block;
+    }
+
+    .presentation .max-width .left .partage 
+    {
+        font-size : 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 0px;
+        margin-top: 15px;
+        width: 100vw;
+    }
+
+
+    /* Section Info Styling */ 
+    .info
+    { /*139 250*/
+        height: 1000px;
+        max-height: none;
+        display: block;
+    }
+    .info .one
+    {
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+
+    .info .one img 
+    {
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+        left: 75px;
+    }
+
+    .info .max-width
+    {
+        width: 100vw;
+        display: block;
+        margin :auto;
+    }
+
+    .info .two
+    {
+        width: 100%;
+        height: 50%;
+    }
+    .info .max-width .left h3
+    {
+        font-size: 50px;
+    }
+    .info .max-width .left .week li
+    {
+        font-size: 18px;
+    }
+
+    /*Section Avis styling */
+
+    .avis .max-width .objet
+    {
+        font-size: 22px;
+    }
+
+    .avis .max-width .content
+    {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* Section Footer styling*/
+
+    footer
+    {
+        display: block;
+        max-height: 300px;
+        height: 300px;
+        padding: 0px 0px;
+    }
+    footer .column
+    {
+        width: 100%;
+    }
+
+    footer .one
+    {
+       margin:auto;
+       max-height: 80px;
+    }
+
+    footer .one img
+    {
+        position: relative;
+        left: 30vw;
+        width: 150px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    footer .two 
+    {
+        height: 80px;
+    }
+
+    footer .two h3
+    {
+       font-size:25px;
+       color:#959564;
+    }
+
+    footer .two .address
+    {
+        margin-top: 5px;
+    }
+
+    footer .three 
+    {
+        text-align: center;
+    }
+
+    footer .three a
+    {
+       font-size: 18px;
+    }
+
+    footer .three .menu
+    {
+        margin-top: 15px;
+    }
+    footer .three li
+    {
+        margin-top: 8px;
+    }
 }
 
 
