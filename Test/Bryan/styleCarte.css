@@ -55,6 +55,10 @@ html{
 
 
 }
+.accueil .navbar .menu-btn
+{
+    opacity: 0%;
+}
 
 .accueil .navbar.sticky
 {
@@ -103,7 +107,8 @@ html{
 .accueil .navbar .menu{
     width: 1000px;
     position: static;
-    margin-bottom: 50px;
+    margin-left: auto;
+  
 }
 
 .presentation{
@@ -554,6 +559,3 @@ footer .three a:hover {
     transition:  all 0.3s ease;
 }
 
-.menu {
-    margin-top: 50px;
-}

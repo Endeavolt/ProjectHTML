@@ -57,6 +57,10 @@ html{
 
 
 }
+.accueil .navbar .menu-btn
+{
+    opacity: 0%;
+}
 
 .accueil .navbar.sticky
 {
@@ -105,6 +109,8 @@ html{
 .accueil .navbar .menu{
     width: 1000px;
     position: static;
+    margin-left: auto;
+  
 }
 
 /* Infomation section*/
@@ -530,4 +536,281 @@ footer .three a:hover {
 {
     height: 500px ;
     width:  900px;
+}
+
+@media (max-width : 600px) {
+
+
+    /* Section Navbar Styling */
+
+    .accueil 
+    {
+        background-position:center;
+        height: 80vh;
+    }
+
+    .accueil .title
+    {
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    .accueil .title img
+    {
+        width: 150px ;
+        height: 55px;
+    }
+    .accueil .navbar
+    {
+        width: 100vw;
+    }
+
+    .accueil .navbar .menu
+    {
+        position: fixed;
+        left : -100%; 
+        width: 100%; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+     
+    .accueil .navbar .menu.active
+    {
+        background-color: rgb(0, 0, 0);
+        left: 0%;
+        height:100vh;
+        width: 100vw;
+        top: 0;
+        padding-top: 160px;
+        position:  fixed;
+        z-index: 998;
+       
+    }
+
+    .accueil .menu li
+    {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+     
+    }
+    .accueil .menu li a
+    {
+        font-size: 35px;
+        margin-left: 0px;
+    }
+
+
+
+    .accueil .navbar .menu-btn
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+       
+        margin-top: 10px;
+        margin-right: 45px;
+        object-fit: cover;
+        opacity: 100%;
+    }
+    
+    .accueil .navbar .menu-btn img
+    {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .accueil .navbar .menu-btn .exit
+    {
+        opacity: 0;
+        z-index: 999;
+        
+    }
+    .accueil .navbar .menu-btn .exit.active
+    {
+        position: fixed;
+        opacity: 100%;
+        z-index: 999;
+        top:75px;
+        margin-left: 0px;
+    }
+    .accueil .navbar .menu-btn .exit.active img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+ /* Section Présentation styling*/
+
+    .presentation
+    {   display: block;
+        height: auto;
+    }
+
+  .presentation .max-width
+  {
+      display: block;
+   
+  }
+
+  .presentation .max-width .column
+  {
+      width: 100%;
+
+  }
+
+  .presentation .max-width .right
+  {
+      margin-left: 0px;
+      height: 500px;
+  }
+
+  .presentation .max-width .right .titreContact
+  {
+    font-size: 30px;
+    margin-top: 25px;
+  }
+
+  .presentation .max-width .right .reseau a
+  {
+        font-size: 22px;
+  }
+
+  .presentation .right .field, .presentation .right form .fields .field
+  {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .presentation .right form .button
+  {
+      margin: auto;
+  }
+
+  .presentation .max-width .left
+  {
+      padding-left: 0px;
+  }
+
+  .presentation .max-width .left #map{
+
+    height: 500px;
+    width: 340px;
+    margin: auto;
+  }
+
+/* Section Info Styling */ 
+.info
+{ 
+    height: 1000px;
+    max-height: none;
+    display: block;
+}
+.info .one
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.info .one img 
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    left: 75px;
+}
+
+.info .max-width
+{
+    width: 100vw;
+    display: block;
+    margin :auto;
+}
+
+.info .two
+{
+    width: 100%;
+    height: 50%;
+}
+.info .max-width .left h3
+{
+    font-size: 50px;
+}
+.info .max-width .left .week 
+{
+    margin: auto;
+}
+.info .max-width .left .week li
+{
+    font-size: 18px;
+    margin-left: 25px
+}
+
+
+ /* Section Footer styling*/
+
+ footer
+ {
+     display: block;
+     max-height: 300px;
+     height: 300px;
+     padding: 0px 0px;
+ }
+ footer .column
+ {
+     width: 100%;
+ }
+
+ footer .one
+ {
+    margin:auto;
+    max-height: 80px;
+ }
+
+ footer .one img
+ {
+     position: relative;
+     left: 30vw;
+     width: 150px;
+     height: 60px;
+     margin-top: 0px;
+ }
+
+ footer .two 
+ {
+     height: 80px;
+ }
+
+ footer .two h3
+ {
+    font-size:25px;
+    color:#959564;
+ }
+
+ footer .two .address
+ {
+     margin-top: 5px;
+ }
+
+ footer .three 
+ {
+     text-align: center;
+ }
+
+ footer .three a
+ {
+    font-size: 18px;
+ }
+
+ footer .three .menu
+ {
+     margin-top: 15px;
+ }
+ footer .three li
+ {
+     margin-top: 8px;
+ }
+
 }
