@@ -576,7 +576,6 @@ footer .three a:hover {
     }
     .accueil .navbar
     {
-        
         width: 100%;
     }
 
@@ -734,7 +733,7 @@ footer .three a:hover {
 
     /* Section Info Styling */ 
     .info
-    { /*139 250*/
+    { 
         height: 1000px;
         max-height: none;
         display: block;
