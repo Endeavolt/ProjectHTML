@@ -12,6 +12,10 @@
     src: url(Police/Biko_Bold.otf);
 }
 
+@font-face {
+    font-family: Monsterrat-Bold;
+    src: url(Police/Montserrat-SemiBold.ttf);
+}
 
 @font-face {
     font-family: Monsterrat-Regular;
@@ -140,7 +144,6 @@ html{
     align-items: center;
     justify-content: space-between;
 }
-
 
 
 
@@ -651,7 +654,6 @@ footer .three a:hover {
     transition:  all 0.3s ease;
 }
 
-
 .btn.show{
     bottom: 30px;
     opacity: 1;
@@ -664,5 +666,337 @@ footer .three a:hover {
     opacity: 1;
     pointer-events: auto;
     transition:  all 0.3s ease;
+}
+
+
+@media (max-width : 600px) {
+
+    /* Section Navbar Styling */
+
+    .accueil 
+    {
+        background-position:center;
+        height: 80vh;
+    }
+
+    .accueil .title
+    {
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    .accueil .title img
+    {
+        width: 150px ;
+        height: 55px;
+    }
+    .accueil .navbar
+    {
+        width: 100%;
+    }
+
+    .accueil .navbar .menu
+    {
+        position: fixed;
+        left : -100%; 
+        width: 100%; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+     
+    .accueil .navbar .menu.active
+    {
+        background-color: rgb(0, 0, 0);
+        left: 0%;
+        height:100vh;
+        width: 100vw;
+        top: 0;
+        padding-top: 160px;
+        position:  fixed;
+        z-index: 998;
+       
+    }
+
+    .accueil .menu li
+    {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+     
+    }
+    .accueil .menu li a
+    {
+        font-size: 35px;
+        margin-left: 0px;
+    }
+
+    .accueil .navbar .menu-btn
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+       
+        margin-top: 10px;
+        margin-right: 45px;
+        object-fit: cover;
+        opacity: 100%;
+    }
+    
+    .accueil .navbar .menu-btn img
+    {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .accueil .navbar .menu-btn .exit
+    {
+        opacity: 0;
+        z-index: 999;
+        
+    }
+    .accueil .navbar .menu-btn .exit.active
+    {
+        position: fixed;
+        opacity: 100%;
+        z-index: 999;
+        top:75px;
+        margin-left: 0px;
+    }
+    .accueil .navbar .menu-btn .exit.active img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .presentation 
+    {
+        width: 100vw;
+        display: block;
+        height: auto;
+    }
+
+    .presentation .max-width .cube
+    {
+        display: flex;
+        height: auto;
+    }
+
+    .presentation .max-width .cube img
+    {
+        height: auto;
+        width: 95vw;
+        margin-left: auto;
+    }
+
+    .presentation .max-width .cube .Topright
+    {
+        display: block;
+        width: 100vw;
+        height: auto;
+        order: 1;
+    }
+
+    .presentation .max-width .cube .Topleft
+    {
+        display: block;
+        width: 100vw;
+        height: auto;
+        order:2;
+    }
+
+    .presentation .max-width .cube .Topleft .titleFormule
+    {
+        display: block;
+        font-size: 35px;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .presentation .max-width .cube .Topleft .titleFormule .left
+    {
+        margin-left: 25px;
+    }
+    .presentation .max-width .cube .Topleft .titleFormule .right
+    {
+        width: 80vw;
+        height: 100px;
+        margin-top: 15px;
+        text-align: center;
+        padding-top: 8px;
+        margin-left: 0px;
+        border: 3px solid #959564;
+        border-radius: 20px;
+    }
+
+    .presentation .max-width .cube .Topleft .contentFormule
+    {
+        display: block;
+        margin-right: 0;
+        padding-left: 0px;
+        margin-left: 8px;
+        width: 90vw;
+    }
+    .presentation .max-width .cube .Topleft .contentFormule .formule
+    {
+        display: block;
+        text-align: center;
+    }
+    .presentation .max-width .cube .Topleft .contentFormule .formule .left
+    {
+      width: 100%;
+    }
+
+    .presentation .max-width .cube .Topleft .contentFormule .sidenote
+    {
+        text-align: center;
+    }
+
+    .presentation .max-width .cube .Botleft
+    {
+        display: block;
+        order: 3;
+        width: 100vw;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .presentation .max-width .cube .Botright
+    {
+        display: block;
+        width: 100vw;
+        height: auto;
+        order: 4;
+    }
+
+    .presentation .max-width .cube .Botright .titleUnite
+    {   font-size: 35px;
+        width: 100vw;
+        padding-right: 0px;
+        padding-left:90px ;
+        text-align: left;
+    }
+    .presentation .max-width .cube .Botright .contentUnite
+    {
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    .presentation .max-width .cube .Botright .contentUnite .unite
+    {
+        font-size: 15px;
+    }
+
+    .presentation .max-width .cube .Botright .contentUnite .unite .price
+    {width: 10%;
+        order: 2;
+        text-align: right;
+    }
+
+    .presentation .max-width .cube .Botright .contentUnite .unite .plat 
+    {
+        width: 100%;
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .presentation .max-width .boisson 
+    {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .presentation .max-width .boisson .biere
+    {
+        width: 100vw;
+    }
+    .presentation .max-width .boisson .autres
+    {
+        margin-left: 0px;
+        width: 100vw;
+    } 
+
+    .presentation .max-width .boisson .title
+    {
+        margin-left: 25px;
+    }
+
+    .presentation .max-width .boisson .article .head
+    {
+        font-family:  Monsterrat-Bold;
+    }
+
+    .presentation .max-width .boisson .article
+    {
+        margin-left: 10px;
+    }
+    .presentation .max-width .boisson .description
+    {
+        text-align: justify;
+        width: 90vw;
+    }
+    
+    footer
+    {
+        display: block;
+        max-height: 300px;
+        height: 300px;
+        padding: 0px 0px;
+    }
+    footer .column
+    {
+        width: 100%;
+    }
+
+    footer .one
+    {
+       margin:auto;
+       max-height: 80px;
+    }
+
+    footer .one img
+    {
+        position: relative;
+        left: 30vw;
+        width: 150px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    footer .two 
+    {
+        height: 80px;
+    }
+
+    footer .two h3
+    {
+       font-size:25px;
+       color:#959564;
+    }
+
+    footer .two .address
+    {
+        margin-top: 5px;
+    }
+
+    footer .three 
+    {
+        text-align: center;
+    }
+
+    footer .three a
+    {
+       font-size: 18px;
+    }
+
+    footer .three .menu
+    {
+        margin-top: 15px;
+    }
+    footer .three li
+    {
+        margin-top: 8px;
+    }
 }
 
