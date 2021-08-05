@@ -32,18 +32,13 @@ html{
 
 .accueil
 {
-   
-    color: white;
     background: black;
-    max-height: 150px;
-    height: 150px;
+    color: white;
+    height: 150px ;
    
 }
 
-.accueil .navbar
-{
-    background: black;
-    height: 150px;
+.accueil .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,25 +46,27 @@ html{
     width: 100%;
     max-height: 150px;
     z-index: 999;
-    
+    transition:  all 0.3s ease;
+
+
 }
 
-/* .accueil .navbar.sticky
+.accueil .navbar.sticky
 {
     background: black;
     color: white; 
-} */
+    transition:  all 0.3s ease;
+}
 
 
 .accueil .title{
-    padding-left:100px ;
-    padding-top: 25px;
-    
-}
+    margin: auto;
+     
+ }
 
 .accueil .title img{
-    width: 325px;
-    height: 150px;
+    width: 250px;
+    height: 100px;
 }
 
 .accueil .navbar a{
@@ -100,8 +97,10 @@ html{
 .accueil .navbar .menu{
     width: 1000px;
     position: static;
-    margin-bottom: 50px;
+   
+    margin-left: auto;
 }
+
 .accueil .navbar .menu-btn
 {
     opacity: 0%;
@@ -197,6 +196,25 @@ html{
         width: 900px;
         height: 800px;
         margin-inline: -437px;
+    }
+
+    .Deux img {
+        width: 100%;
+    }
+
+    .Cinq img
+    {
+        width: 100%;
+    }
+    
+    .Trois img
+    {
+        height: 100%;
+    }
+
+    .Quatre img
+    {
+        height: 100%;
     }
 
     .Deux:hover{
@@ -419,9 +437,7 @@ footer .three a:hover {
     transition:  all 0.3s ease;
 }
 
-.menu {
-    margin-top: 50px;
-}
+
 
 
 @media (max-width : 600px) {

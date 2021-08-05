@@ -21,6 +21,10 @@
     font-family: Monsterrat-Light;
     src: url(Police/Montserrat-Light.ttf);
 }
+@font-face {
+    font-family: Monsterrat-LightItalic;
+    src: url(Police/Montserrat-LightItalic.ttf);
+}
 
 
 *{
@@ -69,14 +73,13 @@ html{
 
 
 .accueil .title{
-    padding-left:100px ;
-    padding-top: 25px;
+   margin: auto;
     
 }
 
 .accueil .title img{
-    width: 325px;
-    height: 150px;
+    width: 250px;
+    height: 100px;
 }
 
 .accueil .navbar a{
@@ -117,79 +120,30 @@ html{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
-    background: white;
-    color: black;
-  
-}
-.presentation .max-width
-{
-    max-width: 1600px;
-}
-
-.presentation .max-width .right
-{
-    width: 30%;
-   
-}
-.presentation .right img{
-    height: 400px ;
-    width:  400px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-top: 5px;
-  
-}
-.presentation .max-width .left{
-    width: 50%;
-    display: inline-block;
-  
-}
-
-.presentation .left .title
-{
-    font-size : 40px;
-    font-weight:800px ;
-    color:#959564;
-    
-     padding-bottom: 20px;
-     font-family: Ananda;
-     letter-spacing: 4px;
-}
-
-.presentation .left .title .name
-{ 
-     font-family:  Biko-Bold;
-     font-size :45px;
-     letter-spacing: 1px;
-     color: black;
-}
- 
-.presentation .left .content{
-    
-    display: inline-block;
-    text-align: justify;
-    font-size: 18px;
-    font-family: Monsterrat-Light;
-}
-
-.presentation{
-   
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 1030px;
+    height: 1650px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 .presentation .max-width{
     max-width: 1900px ;
-    max-height: 1030px ;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
+    align-items:center;
 }
+
+.presentation .max-width .cube
+{
+    display: flex;
+    height: 1030px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
 .presentation .max-width .Topright
 {
     height: 50%;
@@ -258,25 +212,63 @@ html{
     padding-left: 50px;
     color: #959564;
     font-family: Ananda;
+    display: flex;
 }
  
 .presentation .Topleft .titleFormule .name
 {
     color: black;
-    font-family: Biko;
+    font-family:  Biko-Bold;;
 }
+
+.presentation .Topleft .titleFormule .right 
+{
+    font-family : Biko;
+    margin-top: 15px;
+    margin-left: 160px;
+}
+
 .presentation .Topleft .contentFormule{
     
-    margin-top: 50px;
-    margin-right: 250px;
-    padding-left: 50px;
-    display: flex;
+    margin-top: 25px;
+    margin-right: 150px;
+    padding-left: 50px;  
     text-align: left;
 }
+
+
+
+.presentation .Topleft .contentFormule .formule {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    font-family:  Monsterrat-Light;
+}
+
+.presentation .Topleft .contentFormule .formule .left
+{
+    width: 60%;
+}
+
+.presentation .Topleft .contentFormule .formule li
+{
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.presentation .Topleft .contentFormule .sidenote
+{
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: Monsterrat-LightItalic;
+    width: 95%;
+}
+
+
 .presentation .Botright .titleUnite
 {
     font-size : 45px;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-right: 50px;
     font-weight:800px ;
     color: #959564;
@@ -285,16 +277,130 @@ html{
 .presentation .Botright .titleUnite .name
 {   
     color: black;
-    font-family: Biko;
+    font-family: Biko-Bold;
 }
 
 .presentation .Botright .contentUnite{
-    margin-top: 50px;
-    margin-left: 250px;
-    padding-right: 50px;
-    display: flex;
-    text-align: right;
+    margin-top: 15px;
+    margin-left: 150px;
+    padding-right: 15px;
+    
 }
+
+.presentation .Botright .contentUnite .unite
+{
+    display: flex;
+    list-style: none;
+    font-family:Monsterrat-Light ;
+    font-size: 18px;
+   
+}
+.presentation .Botright .contentUnite .unite li
+{
+    margin-top: 7px;
+}
+
+.presentation .Botright .contentUnite .unite .price
+{
+    text-align: left;
+    width: 35%;
+}
+
+.presentation .Botright .contentUnite .unite .plat
+{
+    display: inline;
+    margin-left: 30px;
+    width: 65%;
+}
+.presentation .Botright .contentUnite .unite .plat .piece
+{
+    display: inline;
+    margin-left: 3px;
+    font-family: Monsterrat-LightItalic;
+}
+
+.presentation .max-width .boisson 
+{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.presentation .max-width  .boisson .biere
+{
+    width: 45%;
+    margin-top: 30px;
+}
+
+.presentation .max-width .boisson  .title 
+{
+    font-family: Biko-Bold;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.presentation .max-width .boisson .article
+{
+    margin-bottom: 35px;
+}
+
+.presentation .max-width .boisson  .article .head 
+{
+    font-family:  Monsterrat-Regular;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex ;
+}
+
+.presentation .max-width .boisson  .article .head .price
+{
+    color:#959564;
+}
+
+.presentation .max-width .boisson  .article .head .nom
+{
+    width: 65%;
+}
+.presentation .max-width .boisson  .article .head .degre
+{
+    font-family: Monsterrat-LightItalic;
+    display: inline;
+    width: 35%;
+}
+
+.presentation .max-width .boisson  .article .description 
+{
+    font-family: Monsterrat-LightItalic;
+    font-size: 15px;
+}
+
+.presentation .max-width .boisson .autres
+{
+    width: 45%;
+    margin-left: 60px;
+}
+
+.presentation .max-width .boisson .autres .soft
+{
+    margin-top: 25px;
+}
+
+.presentation .max-width .boisson .autres .vin .title
+{
+    margin-bottom: 10px;
+}
+
+.presentation .max-width .boisson .autres .vin .article
+{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.presentation .max-width .boisson .autres .soft .article
+{   
+    margin-bottom: 10px ;
+}
+
 
 /* Infomation section*/
 
@@ -355,6 +461,7 @@ html{
 .info .max-width .right .information .title
 {
     font-weight: 650;
+   
 }
 
 .info .max-width .right .information .content  {
