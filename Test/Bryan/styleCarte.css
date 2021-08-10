@@ -124,7 +124,7 @@ html{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 1650px;
+    height: 3000px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
@@ -324,18 +324,33 @@ html{
 
 .presentation .max-width .boisson 
 {
-    display: flex;
+    display: block;
     margin: auto;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 .presentation .max-width  .boisson .biere
 {
-    width: 45%;
+    display: flex;
     margin-top: 30px;
 }
 
+
+.presentation .max-width .boisson .biere .liste
+{
+    width: 45%;
+}
+
+.presentation .max-width .boisson .biere .imageBiere
+{
+    width: 45%;
+}
+.presentation .max-width .boisson .biere .imageBiere img
+{
+    width: 700px;
+    height: 500px;
+}
 .presentation .max-width .boisson  .title 
 {
     font-family: Biko-Bold;
@@ -356,15 +371,27 @@ html{
     display: flex ;
 }
 
+.presentation .max-width .boisson .vin .blanc
+{
+    margin-top: 25px;
+}
+
 .presentation .max-width .boisson  .article .head .price
 {
+    margin-left: 10px;
     color:#959564;
 }
 
-.presentation .max-width .boisson  .article .head .nom
+.presentation .max-width .boisson  .article .head .line
 {
-    width: 65%;
+    border: 0px;
+    margin-left: 15px;
+    margin-top:14px ;
+    border-top: 3px dotted gray;
+    border-style: dotted;
+    width: 17%;
 }
+
 .presentation .max-width .boisson  .article .head .degre
 {
     font-family: Monsterrat-LightItalic;
@@ -380,7 +407,7 @@ html{
 
 .presentation .max-width .boisson .autres
 {
-    width: 45%;
+    align-items: center;
     margin-left: 60px;
 }
 
@@ -397,13 +424,38 @@ html{
 .presentation .max-width .boisson .autres .vin .article
 {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .presentation .max-width .boisson .autres .soft .article
 {   
-    margin-bottom: 10px ;
+    margin-bottom: 25px ;
+}
+.presentation .max-width .boisson .autres .soft .others .article
+{   
+    margin-bottom: 5px ;
+}
+.presentation .max-width .boisson .autres .soft 
+{  
+    display: flex;
 }
 
+.presentation .max-width .boisson .autres .soft .command
+{  
+    width: 45%;
+}
+
+
+.presentation .max-width .boisson .autres .soft .illustration
+{  
+    width: 45%;
+    margin-left: 30px;
+}
+
+.presentation .max-width .boisson .autres .soft .illustration img
+{  
+  width: 800px;
+  height: 500px;
+}
 
 /* Infomation section*/
 
@@ -909,8 +961,11 @@ footer .three a:hover {
 
     .presentation .max-width .boisson .biere
     {
+        display: block;
         width: 100vw;
     }
+
+
     .presentation .max-width .boisson .autres
     {
         margin-left: 0px;
@@ -920,11 +975,19 @@ footer .three a:hover {
     .presentation .max-width .boisson .title
     {
         margin-left: 25px;
+        margin-bottom: 10px;
     }
 
     .presentation .max-width .boisson .article .head
     {
+        width: 90vw;
         font-family:  Monsterrat-Bold;
+        margin-bottom: 10px;
+    }
+    .presentation .max-width .boisson .article .head .line
+    {
+        margin-left: 10px;
+        width: 13%;
     }
 
     .presentation .max-width .boisson .article
@@ -936,7 +999,31 @@ footer .three a:hover {
         text-align: justify;
         width: 90vw;
     }
-    
+
+    .presentation .max-width .boisson .autres .soft
+    {
+        display: block;
+    }
+
+    .presentation .max-width .boisson .autres .soft .illustration
+    {
+        display: block;
+        width: 90vw;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    .presentation .max-width .boisson .autres .soft .illustration img {
+        height: auto;
+        width: 95vw;
+        margin-right: 17px;
+    }
+    .presentation .max-width .boisson .autres .soft .command
+    {
+       
+        display: block;
+        width: 90vw;
+    }    
     footer
     {
         display: block;
