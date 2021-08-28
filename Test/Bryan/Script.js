@@ -61,8 +61,10 @@ window.onload = function() {
       emailjs.sendForm('service_byk8y77', 'template_7iqzmc7', this)
           .then(function() {
               console.log('SUCCESS!');
+              document.getElementById('contact-form').reset();
           }, function(error) {
               console.log('FAILED...', error);
+              document.getElementById('contact-form').reset();
           });
   });
 }
