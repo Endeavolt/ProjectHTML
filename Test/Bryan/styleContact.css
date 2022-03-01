@@ -530,11 +530,6 @@ footer .three a:hover {
     transition:  all 0.3s ease;
 }
 
-#map
-{
-    height: 500px ;
-    width:  900px;
-}
 
 @media (max-width : 600px) {
 
@@ -654,7 +649,7 @@ footer .three a:hover {
 
   .presentation .max-width .column
   {
-      width: 100%;
+      width: 100vw;
 
   }
 
@@ -688,14 +683,15 @@ footer .three a:hover {
 
   .presentation .max-width .left
   {
-      padding-left: 0px;
+      padding-left: 5px;
+      width: 100vw;
   }
 
-  .presentation .max-width .left #map{
+  .presentation .max-width .left iframe{
 
-    height: 500px;
-    width: 340px;
-    margin: auto;
+    height: 50vh;
+    width: 95vw;
+    margin-left: auto;
   }
 
 /* Section Info Styling */ 

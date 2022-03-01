@@ -40,7 +40,6 @@ html{
     background-image:url(Images/Retouchées/tapas-croquettes-nanek.jpg) ;
     background-repeat: no-repeat;  
     background-size: cover;
-    color: white;
     height: 950px
    
 }
@@ -61,13 +60,12 @@ html{
 .accueil .navbar.sticky
 {
     background: black;
-    color: white; 
     transition:  all 0.3s ease;
 }
 
 
 .accueil .title{
-    margin: auto;
+    margin-left: 50px;
      
  }
 
@@ -91,7 +89,7 @@ html{
 }
 .accueil .navbar li a
 {
-    font-size:25px;
+    font-size:20px;
     font-weight: 800;
     font-family: Biko;
     margin-left: 100px;
@@ -102,10 +100,45 @@ html{
     color: crimson;
 }
 .accueil .navbar .menu{
-    width: 1000px;
     position: static;
-   
-    margin-left: auto;
+    width: 1200 px;
+    margin-left: 0px;
+}
+
+.accueil .navbar a .command{
+    background-color: white;
+    margin-left: 100px;
+    padding-left:  40px;
+    padding-right:  40px;
+    padding-top:  15px;
+    padding-bottom:  12px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.accueil .navbar a .command:hover
+{
+    background:  none;
+  color:  white;
+    border-radius: 12px;
+}
+
+.accueil .name .menu li a .command .textbut
+{
+    margin: auto;
+    text-align: center;
+    font-size:20px;
+    font-weight: 800;
+    font-family: Biko;
+    transition: color 0.3s ease ;
+    color:black;
+}
+
+.accueil .navbar.sticky a .command{
+    color: black;
+    
 }
 
 .accueil .navbar .menu-btn
@@ -119,7 +152,7 @@ html{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
+    height: 650px;
     background: white;
     color: black;
   
@@ -127,23 +160,24 @@ html{
 .presentation .max-width
 {
     max-width: 1600px;
+    
 }
 
 .presentation .max-width .right
 {
-    width: 30%;
+    width: 50%;
    
 }
 .presentation .right img{
-    height: 400px ;
-    width:  400px;
+    height: 580px ;
+    width:  580px;
     object-fit: cover;
     border-radius: 6px;
     margin-top: 5px;
   
 }
 .presentation .max-width .left{
-    width: 70%;
+    width: 50%;
     display: inline-block;
   
 }
@@ -169,27 +203,27 @@ html{
  
 .presentation .left .content{
     
-    display: flex;
+    display: block;
     text-align: justify;
-    font-size: 17px;
+    font-size: 20px;
     font-family: Monsterrat-Light;
 }
 
 .presentation .left .content p
 {
-    width: 45%;
+    width: 100%;
     margin-right: 45px;
+    margin-top: 5px;
 }
 .presentation .left .partage{
     
-    display: flex;
+    display: block;
     align-items: center;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Monsterrat-Light;
-    margin-top: 25px;
-    margin-left: 100px;
-    width: 70%;
+    margin-top: 10px;
+    width: 100%;
 }
 
 
@@ -210,7 +244,6 @@ html{
 .info .one {
     width: 50%;
     height: initial;
-  
     background-color: rgb(41, 41, 48);
    
 }

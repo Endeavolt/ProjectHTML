@@ -686,49 +686,21 @@ footer .three a:hover {
     font-size:27px ;
 }
 
-.btn{
-
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: auto;
-    transition:  all 0.3s ease;
-}
-
-.btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-    transition:  all 0.3s ease;
-}.btn.end{
-    
-    bottom: 30px;
-    right: 250px;
-    opacity: 1;
-    pointer-events: auto;
-    transition:  all 0.3s ease;
-}
 
 
 @media (max-width : 600px) {
 
     /* Section Navbar Styling */
 
+    .html {
+        width: 100vw;
+    }
     .accueil 
     {
         background-position:center;
         height: 80vh;
+        width: 100vw;
+
     }
 
     .accueil .title
@@ -744,14 +716,14 @@ footer .three a:hover {
     }
     .accueil .navbar
     {
-        width: 100%;
+        width: 100vw;
     }
 
     .accueil .navbar .menu
     {
         position: fixed;
         left : -100%; 
-        width: 100%; 
+        width: 100vw; 
         margin-top: 0px;
         margin-bottom: 0px;
         
@@ -965,6 +937,12 @@ footer .three a:hover {
         width: 100vw;
     }
 
+    .presentation .max-width .boisson .biere .imageBiere img
+    {
+        height: auto;
+        width: 95vw;
+        margin-right: 17px;
+    }
 
     .presentation .max-width .boisson .autres
     {

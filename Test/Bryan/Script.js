@@ -24,25 +24,21 @@ $(document).ready(function(){
 
 
 
+// let map;
 
-function button(){
-  console.log("Button Click");
-
-}
-
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: 47.670722, lng: -2.960611 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: uluru,
-  });
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
+// function initMap() {
+//   // The location of Uluru
+//   const uluru = { lat: 47.670722, lng: -2.960611 };
+//   // The map, centered at Uluru
+//      map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 15,
+//     center: uluru,
+//   });
+//   const marker = new google.maps.Marker({
+//     position: uluru,
+//     map: map,
+//   });
+// }
 
 
 // Email Sending 
