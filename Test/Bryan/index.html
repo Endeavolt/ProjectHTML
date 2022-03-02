@@ -166,14 +166,76 @@
 
     <section class="avis">
         <div class="max-width">
-            <div class="comment">
+            <div class="carousel">
 
-                <div class="name">Jean-Michel Dinero</div>
-                <div class="objet">Très bonne expérience chez Nanek</div>
-                <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia illum facilis
-                    consequatur iusto esse, sunt quo unde voluptates labore? Dolor tempora, labore eaque impedit debitis
-                    vero a dolorem officia nostrum.
+                <button class="carousel_button carousel_button--left is-hidden"><img src="Images/poele-a-frire.png">
+                </button>
+
+                <div class="carousel_track-container">
+                    <ul class="carousel_track">
+                        <li class="carousel_slide current-slide">
+                            <div class="content">
+                                <div class="name">Ewen</div>
+                                <div class="objet">Super Adresse</div>
+                                “Super adresse pour découvrir une cuisine moderne et qui change ! Nous avons partagé à
+                                deux la Formule Tapas et ça a été parfait ! Aussi bien en quantité que pour le plaisir
+                                des papilles ! Le petit plus, les plats à emporter se réchauffent très bien et
+                                facilement. Je recommande les yeux fermés !”
+                            </div>
+                        </li>
+                        <li class="carousel_slide">
+                            <div class="content">
+                                <div class="name">Céline</div>
+                                <div class="objet">Excellente découverte</div>
+                                “Excellente découverte ! Nous avons adoré toute notre commande : les tapas et la sangria
+                                revisitée pleins de nouvelles saveurs une chance de l'avoir sur notre commune !
+                                Cuisinier très sympathique et généreux !”
+                            </div>
+                        </li>
+                        <li class="carousel_slide">
+                            <div class="content">
+                                <div class="name">Olympe</div>
+                                <div class="objet">Nous nous sommes régalées</div>
+                                “Nous nous sommes régalées avec les beignets de poulet et les pommes de terre sautées
+                                accompagnées de sauces maisons. Tout est très bon et parfumé. De plus, l’accueil est
+                                chaleureux et très sympathique, et le service rapide. Merci beaucoup et à bientôt !”
+
+                            </div>
+                        </li>
+                        <li class="carousel_slide">
+                            <div class="content">
+                                <div class="name">Jason</div>
+                                <div class="objet">Un concept qui manquait cruellement dans la région</div>
+                                “Des tapas modernes et somptueusement assaisonnées, un duo d'houmous copieusement
+                                gourmand et des sauces maison qui font saliver.
+                                Un concept qui manquait cruellement dans la région.”
+
+                            </div>
+                        </li>
+                        <li class="carousel_slide">
+                            <div class="content">
+                                <div class="name">Dylan</div>
+                                <div class="objet">Nourriture excellente</div>
+                                “Nourriture excellente, produits frais et de bonne qualité, possibilité de partager pour
+                                pouvoir goûter plus de plats.
+                                Top, j'y retournerai avec plaisir quand je serai dans le coin.”
+
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
+
+                <button class="carousel_button carousel_button--right"><img src="Images/oven.png"></button>
+
+                <div class="carousel_nav">
+                    <button class="carousel_indicator current-slide"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                </div>
+
             </div>
             <div class="spaceContent">
             </div>
@@ -184,7 +246,7 @@
                 <div class="steps">
                     <div class="step one">
                         <div class="img">
-                            <img src ="Images/oven.png">
+                            <img src="Images/oven.png">
                         </div>
                         <div class="content">
                             3/4 minute à 200° degrès
@@ -192,19 +254,19 @@
                     </div>
                     <div class="step two">
                         <div class="img">
-                            <img src ="Images/poele-a-frire.png">
+                            <img src="Images/poele-a-frire.png">
                         </div>
                         <div class="content">
                             3/4 minute <br>
-                            5/6 pour le nuggets
+                            5/6 pour les nuggets
                         </div>
                     </div>
                     <div class="step three">
                         <div class="img">
-                            <img src ="Images/microwave-oven.png">
+                            <img src="Images/microwave-oven.png">
                         </div>
                         <div class="content">
-                             1 minute 30 (pas conseillé)
+                            1 minute 30 (pas conseillé)
                         </div>
                     </div>
                 </div>
@@ -237,6 +299,7 @@
     </footer>
 
     <script src="Script.js"> </script>
+    <script src="carousel.js"></script>
 </body>
 
 

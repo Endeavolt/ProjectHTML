@@ -32,13 +32,13 @@ html{
 
 .accueil
 {
-    background: black;
-    color: white;
-    height: 150px ;
+ 
+    height: 150px
    
 }
 
 .accueil .navbar{
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,13 +54,12 @@ html{
 .accueil .navbar.sticky
 {
     background: black;
-    color: white; 
     transition:  all 0.3s ease;
 }
 
 
 .accueil .title{
-    margin: auto;
+    margin-left: 50px;
      
  }
 
@@ -84,7 +83,7 @@ html{
 }
 .accueil .navbar li a
 {
-    font-size:25px;
+    font-size:20px;
     font-weight: 800;
     font-family: Biko;
     margin-left: 100px;
@@ -95,16 +94,24 @@ html{
     color: crimson;
 }
 .accueil .navbar .menu{
-    width: 1000px;
     position: static;
-   
-    margin-left: auto;
+}
+
+.accueil .navbar.sticky a .command{
+    color: black;
+    
+}
+
+.accueil .navbar.sticky a .command:hover
+{
+    color: white;
 }
 
 .accueil .navbar .menu-btn
 {
     opacity: 0%;
 }
+
 
 .max-width{
     max-width: 1600px;
@@ -186,149 +193,219 @@ html{
     max-height: 100%;
   }
   
-    .Trois{
+.Trois{
     margin-top: 310px;
-  }
-    .Cinq{
-        margin-top:310px;
-    }
-    .Six{
-        width: 900px;
-        height: 800px;
-        margin-inline: -437px;
-    }
-
-    .Deux img {
-        width: 100%;
-    }
-
-    .Cinq img
-    {
-        width: 100%;
-    }
-    
-    .Trois img
-    {
-        height: 100%;
-    }
-
-    .Quatre img
-    {
-        height: 100%;
-    }
-
-    .Deux:hover{
-        max-height: 584px;
-        max-width: 966px;
-    }
-    .Trois:hover{
-        max-height: 584px;
-        max-width: 966px;
-    }
-/* .cuisine .wrapper .photoblock .Un {
-   
-    max-width: 50px;
-    max-height: 50px;
-    
-} */
-
-
-
- /* .cuisine .photoblock .right1
+}
+.Cinq{
+    margin-top:310px;
+}
+.Six{
+    width: 900px;
+    height: 800px;
+    margin-inline: -437px;
+}
+.Deux img {
+    width: 100%;
+}
+.Cinq img
 {
-    height: 200px;
-    width:28% ;
-    margin-left: 15px;
+    width: 100%;
+}
+
+.Trois img
+{
+    height: 100%;
+}
+.Quatre img
+{
+    height: 100%;
+}
+.Deux:hover{
+    max-height: 584px;
+    max-width: 966px;
+}
+.Trois:hover{
+    max-height: 584px;
+    max-width: 966px;
+}
+
+.restaurant
+{
+  height: 1100px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  background: white;
+  
+}
+
+.restaurant .title{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Biko;
+    margin-bottom: 15px;
+}
+
+.restaurant .photos
+{
+
+    justify-content: center;
+}
+
+.restaurant .bloc
+{
+    width:1000px;
+    margin: auto;
     display:flex;
-    align-items: center;
-    transition: all 0.3s ease ;
-   
-} */
-/* .cuisine .photoblock .right1:hover
+}
+.restaurant .bloc .colums
 {
-    height: 45%;
-    width:45% ;
-    margin-left: 15px;
-    display:  flex;
-    align-items: center;
+    height: 480px;
+}
+
+
+.restaurant .up .two
+{
+    margin-left: 50px;
+}
+
+.restaurant .down .two
+{
+    width: 400px;
+}
+
+
+
+
+.restaurant .bloc .two .img
+{
+    margin-top: 10px;
+    height:  45%;
+}
+
+.restaurant .down .one
+{
+    margin-left: 50px;
+}
+
+
+.archive 
+{
+  height: 1400px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  background: white;
+  transition: all 0.5s ease;  
+}
+.resume 
+{
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  background: white;
   
-   
-} 
- .cuisine .photoblock .right1 img
-{
-    /* padding-top: 15px; */
-    /* margin-bottom: 15px;
-    transition: all 0.3s ease ;
-}   */
+}
 
-/* .cuisine .photoblock .right1 img:hover
+.resume .max-width
 {
-    /* padding-top: 15px; */
-    /* margin-bottom: 15px;
-    border-color: white;
-    border: solid 5px;
-    border-radius: 10px;
-    width: 100%;
-    height:100%;
- 
-}  */
+    height: 300px;
+    display: block;
+}
 
-/* .cuisine .photoblock .right2
-{
-    height: 200px;
-    width:28% ;
-    margin-left: 15px;
-    margin-top: 25%;
-    display:  flex;
-    align-items: center;
-    transition: all 0.3s ease ;
-   
-} */
-/* .cuisine .photoblock .right2:hover
-{
-    height: 45%;
-    width:45% ;
-    margin-left: 15px;
-    margin-top: 25%;
-    display:  grid;
-    align-items: center;
-  
-   
-} */
-
-/* .cuisine .photoblock .right2 img
-{
-    /* padding-top: 15px; */
-    /* margin-top: 25%;
-    margin-bottom: 15px;
-    transition: all 0.3s ease ;
-} */ 
-
-/* .cuisine .photoblock .right2 img:hover
-{
-    /* padding-top: 15px; */
-    /* margin-top: 25%;
-    margin-bottom: 15px;
-    border-color: white;
-    border: solid 5px;
-    border-radius: 10px;
-    /* width: 100%;
-    height:100%; */
- 
-/* }  */
-
-
-/* .cuisine .photoblock .left
+.buttonDis
 {
     width: 100%;
-    transition: all 0.3s ease ;
-} */
-
-/* .cuisine .photoblock .left:hover
+    display: flex;
+    align-items: center;
+}
+.discover
 {
-    width: 120%;
-     
-} */
+    margin: auto;
+    border: 2px solid black;
+    border-radius:  10px;
+    width:150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: Monsterrat-Light;
+    font-size: 18px;
+    transition: all 0.5s ease;  
+}
+
+.discover:hover
+{
+    color: black;
+    background-color: transparent;
+
+}
+
+.archive .title{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Biko;
+    margin-bottom: 15px;
+}
+
+.archive .photos
+{
+    transition: all 0.5s ease;  
+    justify-content: center;
+}
+
+.archive .bloc
+{
+    width:1000px;
+    margin: auto;
+    display:flex;
+}
+.archive .bloc .colums
+{
+    height: 480px;
+}
+
+
+.archive .up .two
+{
+    margin-left: 50px;
+}
+
+.archive .down .two
+{
+    width: 400px;
+}
+
+.archive .bloc .two .img
+{
+    margin-top: 10px;
+    height:  45%;
+}
+
+.archive .down .one
+{
+    margin-left: 50px;
+}
+
+.buttonClose
+{   
+    transition: all 0.5s ease;  
+    display: flex;
+}
+
+
+.is-hidden { 
+    transition: all 0.5s ease;  
+    display:  none;}
+
+
+
+
 footer
 {
  
