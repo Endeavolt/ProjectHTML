@@ -34,13 +34,11 @@ html{
     scroll-behavior:smooth;
 }
 
-
 .accueil
 {
     background-image:url(Images/Retouchées/tapas-croquettes-nanek.jpg) ;
     background-repeat: no-repeat;  
     background-size: cover;
-    color: white;
     height: 950px
    
 }
@@ -57,23 +55,19 @@ html{
 
 
 }
-.accueil .navbar .menu-btn
-{
-    opacity: 0%;
-}
 
 .accueil .navbar.sticky
 {
     background: black;
-    color: white; 
     transition:  all 0.3s ease;
 }
 
 
 .accueil .title{
-    margin: auto;
+    margin-left: 50px;
      
  }
+
 .accueil .title img{
     width: 250px;
     height: 100px;
@@ -94,7 +88,7 @@ html{
 }
 .accueil .navbar li a
 {
-    font-size:25px;
+    font-size:20px;
     font-weight: 800;
     font-family: Biko;
     margin-left: 100px;
@@ -105,10 +99,55 @@ html{
     color: crimson;
 }
 .accueil .navbar .menu{
-    width: 1000px;
     position: static;
-    margin-left: auto;
-  
+    width: 1200 px;
+    margin-left: 0px;
+}
+
+.accueil .navbar a .command{
+    background-color: white;
+    margin-left: 100px;
+    padding-left:  40px;
+    padding-right:  40px;
+    padding-top:  15px;
+    padding-bottom:  12px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.accueil .navbar a .command:hover
+{
+    background:  none;
+    color:  white;
+    border-radius: 12px;
+}
+
+.accueil .name .menu li a .command .textbut
+{
+    margin: auto;
+    text-align: center;
+    font-size:20px; 
+    font-weight: 800;
+    font-family: Biko;
+    transition: color 0.3s ease ;
+    color:black;
+}
+
+.accueil .navbar.sticky a .command{
+    color: black;
+    
+}
+
+.accueil .navbar.sticky a .command:hover
+{
+    color: white;
+}
+
+.accueil .navbar .menu-btn
+{
+    opacity: 0%;
 }
 
 /* Infomation section*/

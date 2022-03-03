@@ -313,20 +313,20 @@ html{
 .discover
 {
     margin: auto;
-    border: 2px solid black;
+    border: 2px solid #3B513C;
     border-radius:  10px;
     width:150px;
     height: 50px;
-    background-color: black;
+    background-color: #3B513C;
     color: white;
-    font-family: Monsterrat-Light;
+    font-family: Biko;
     font-size: 18px;
     transition: all 0.5s ease;  
 }
 
 .discover:hover
 {
-    color: black;
+    color: #3B513C;
     background-color: transparent;
     
 
