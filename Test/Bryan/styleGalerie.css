@@ -115,17 +115,14 @@ html{
 
 .max-width{
     max-width: 1600px;
-    height: 1420px;
     padding: 80px;
     margin:  auto;
 }
 
+
 .cuisine
 {
-  height: 1400px;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   color: #111;
   background: white;
   
@@ -139,102 +136,70 @@ html{
     margin-bottom: 15px;
 }
 
-.cuisine .wrapper .photoblock
-{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-auto-rows: 455px;
-    grid-gap: 10px;
+.cuisine .photos
+{   width:100%;
+    justify-content: center;
 }
 
-.wrapper div:nth-child(1) {
-    height: 600px;
-    width: 900px;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .wrapper div:nth-child(6) {
-    max-height: 600px;
-    max-width: 900px;
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .wrapper div:nth-child(2) {
-    max-height: 292px;
-    width: 463px;
-    grid-column: 2;
-    grid-row: 1;
-    transition: all 0.3s ease ;
-    
-  }
-
- .wrapper div:nth-child(3) {
-    max-height: 292px;
-    width: 463px;
-    grid-column: 2;
-    grid-row: 1/2;
-  }
-  .wrapper div:nth-child(4) {
-    max-height: 292px;
-    width: 463px;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .wrapper div:nth-child(5) {
-    max-height: 292px;
-    width: 463px;
-    grid-column: 1;
-    grid-row: 2/2;
-  }
-
-  img{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-.Trois{
-    margin-top: 310px;
-}
-.Cinq{
-    margin-top:310px;
-}
-.Six{
-    width: 900px;
-    height: 800px;
-    margin-inline: -437px;
-}
-.Deux img {
-    width: 100%;
-}
-.Cinq img
-{
-    width: 100%;
+.cuisine .bloc
+{   
+    display:flex;
+    width: fit-content;
+    margin: auto;
+    height: 480px;
+    align-items: center;
 }
 
-.Trois img
+.cuisine .up .one img
 {
-    height: 100%;
-}
-.Quatre img
+    height: 480px;
+}   
+
+.cuisine .up .two
 {
-    height: 100%;
+    margin-left: 50px;
 }
-.Deux:hover{
-    max-height: 584px;
-    max-width: 966px;
+
+.cuisine .up .two img
+{
+    width: 400px;
+    height: 235px;
 }
-.Trois:hover{
-    max-height: 584px;
-    max-width: 966px;
+
+.cuisine .down 
+{
+    margin-top: 30px;
 }
+
+.cuisine .down .one 
+{
+    margin-left: 50px;
+}
+
+.cuisine .down .one img
+{
+    height:  480px;
+}   
+
+
+.cuisine .down .two
+{
+    width: 400px;
+}
+
+
+.cuisine .down .two img
+{
+    width: 400px;
+    height: 235px;
+}
+
+
+/* Restaurent */
 
 .restaurant
 {
-  height: 1100px;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   color: #111;
   background: white;
   
@@ -249,27 +214,50 @@ html{
 }
 
 .restaurant .photos
-{
-
+{   width:100%;
     justify-content: center;
 }
 
 .restaurant .bloc
-{
-    width:1000px;
-    margin: auto;
+{   
     display:flex;
-}
-.restaurant .bloc .colums
-{
+    width: fit-content;
+    margin: auto;
     height: 480px;
+    align-items: center;
 }
 
+.restaurant .up .one img
+{
+    height: 480px;
+}   
 
 .restaurant .up .two
 {
     margin-left: 50px;
 }
+
+.restaurant .up .two img
+{
+    width: 400px;
+    height: 235px;
+}
+
+.restaurant .down 
+{
+    margin-top: 30px;
+}
+
+.restaurant .down .one 
+{
+    margin-left: 50px;
+}
+
+.restaurant .down .one img
+{
+    height:  480px;
+}   
+
 
 .restaurant .down .two
 {
@@ -277,44 +265,43 @@ html{
 }
 
 
-
-
-.restaurant .bloc .two .img
+.restaurant .down .two img
 {
-    margin-top: 10px;
-    height:  45%;
+    width: 400px;
+    height: 235px;
 }
 
-.restaurant .down .one
-{
-    margin-left: 50px;
-}
 
+.oldPhoto
+{
+    transition: all 0.5s ease;  
+}
 
 .archive 
 {
-  height: 1400px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  color: #111;
-  background: white;
-  transition: all 0.5s ease;  
+    transition: all 0.5s ease;  
+    align-items: center;
+    color: #111;
+    background: white;
+    
 }
 .resume 
 {
+    transition: all 0.5s ease;  
   height: 300px;
   align-items: center;
   justify-content: space-between;
   color: #111;
   background: white;
   
+  
 }
 
 .resume .max-width
-{
+{ 
     height: 300px;
     display: block;
+    
 }
 
 .buttonDis
@@ -322,7 +309,7 @@ html{
     width: 100%;
     display: flex;
     align-items: center;
-}
+    }
 .discover
 {
     margin: auto;
@@ -341,6 +328,7 @@ html{
 {
     color: black;
     background-color: transparent;
+    
 
 }
 
@@ -351,47 +339,68 @@ html{
     font-weight: 800;
     font-family: Biko;
     margin-bottom: 15px;
+    
 }
 
 .archive .photos
-{
-    transition: all 0.5s ease;  
+{   
+    width:100%;
     justify-content: center;
 }
 
 .archive .bloc
-{
-    width:1000px;
-    margin: auto;
+{   
     display:flex;
-}
-.archive .bloc .colums
-{
+    width: fit-content;
+    margin: auto;
     height: 480px;
+    align-items: center;
+    
 }
 
+.archive .up .one img
+{ 
+    height: 480px;
+}   
 
 .archive .up .two
-{
+{ 
     margin-left: 50px;
 }
 
+.archive .up .two img
+{ 
+    width: 400px;
+    height: 235px;
+}
+
+.archive .down 
+{ 
+    margin-top: 30px;
+}
+
+.archive .down .one 
+{ 
+    margin-left: 50px;
+}
+
+.archive .down .one img
+{ 
+    height:  480px;
+}   
+
+
 .archive .down .two
-{
+{ 
     width: 400px;
 }
 
-.archive .bloc .two .img
-{
-    margin-top: 10px;
-    height:  45%;
-}
 
-.archive .down .one
-{
-    margin-left: 50px;
+.archive .down .two img
+{ 
+    width: 400px;
+    height: 235px;
 }
-
 .buttonClose
 {   
     transition: all 0.5s ease;  
@@ -622,96 +631,7 @@ footer .three a:hover {
     }
 
 
-    /* Section Galerie styling*/
-
-    .cuisine
-    {
-        height: auto;
-    }
-
-    .cuisine .max-width 
-    {
-        height: auto;
-        padding: 0px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-
-    .cuisine .max-width .title
-    {
-        margin-left: 25px;
-    }
   
-
-    .cuisine .max-width .wrapper
-    {
-        margin: auto;
-        width: 95vw;
-        height: auto;
-        
-    }
-    .cuisine .max-width .wrapper .photoblock
-    {
-        display: block;
-    }
-
-    .wrapper div:nth-child(1)
-    {
-        height: auto;
-        width: auto;
-        max-width:none;
-        max-height: none;
-    }
-
-    .wrapper div:nth-child(2)
-    {
-        height: auto;
-        width: auto;
-        max-width:none;
-        max-height: none;
-    }
-    
-    .wrapper div:nth-child(3)
-    {
-        height: auto;
-        width: auto;
-        max-width:none;
-        max-height: none;
-    }
-    .wrapper div:nth-child(4)
-    {
-        height: auto;
-        width: auto;
-        max-width:none;
-        max-height: none;
-    }
-    .wrapper div:nth-child(5)
-    {
-        height: auto;
-        width: auto;
-        max-width:none;
-        max-height: none;
-    }
-    .wrapper div:nth-child(6)
-    {
-        height: auto;
-        width: auto;
-        max-width:none;
-        max-height: none;
-    }
-
-    .cuisine .max-width .wrapper .photoblock .Trois
-    {
-        margin-top: 0;
-    }
-    .cuisine .max-width .wrapper .photoblock .Cinq
-    {
-        margin-top: 0;
-    }
-    .cuisine .max-width .wrapper .photoblock .Six
-    {
-        margin-inline: 0px;   
-    }
 
     /* Section Footer styling*/
 
