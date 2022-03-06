@@ -97,6 +97,38 @@ html{
     position: static;
 }
 
+
+.accueil .navbar a .command{
+    background-color: white;
+    margin-left: 100px;
+    padding-left:  40px;
+    padding-right:  40px;
+    padding-top:  15px;
+    padding-bottom:  12px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.accueil .navbar a .command:hover
+{
+    background:  none;
+    color:  white;
+    border-radius: 12px;
+}
+
+.accueil .name .menu li a .command .textbut
+{
+    margin: auto;
+    text-align: center;
+    font-size:20px; 
+    font-weight: 800;
+    font-family: Biko;
+    transition: color 0.3s ease ;
+    color:black;
+}
+
 .accueil .navbar.sticky a .command{
     color: black;
     
@@ -106,7 +138,6 @@ html{
 {
     color: white;
 }
-
 .accueil .navbar .menu-btn
 {
     opacity: 0%;
@@ -534,28 +565,24 @@ footer .three a:hover {
     .accueil 
     {
         background-position:center;
-        height: 15vh;
+        height: auto;
     }
 
     .accueil .title
     {
-        padding-left: 50px;
+        padding-left: 20px;
         padding-top: 20px;
     }
 
-    .accueil .title img
-    {
-        width: 150px ;
-        height: 55px;
-    }
     .accueil .navbar
     {
-        
-        width: 100vw;
+        position: static;
+        width: 100%;
     }
 
     .accueil .navbar .menu
     {
+        display: none;
         position: fixed;
         left : -100%; 
         width: 100%; 
@@ -566,6 +593,7 @@ footer .three a:hover {
      
     .accueil .navbar .menu.active
     {
+        display: block;
         background-color: rgb(0, 0, 0);
         left: 0%;
         height:100vh;
@@ -590,7 +618,11 @@ footer .three a:hover {
         margin-left: 0px;
     }
 
-
+    .accueil .menu li a .command
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     .accueil .navbar .menu-btn
     {
@@ -631,7 +663,176 @@ footer .three a:hover {
     }
 
 
+
+    .cuisine .bloc
+     { 
+         height: auto;
+         display: block;
+    }
+
+    .cuisine .bloc img
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    .cuisine .up .one img
+    {
+        height: auto;
+    }
+
+    .cuisine .up .two
+    {
+        margin-left: 0px;
+    }
+    
+
+    .cuisine .up .two img
+    {
+        width:  100%;
+        height: auto;
+    }
+
+    .cuisine .down .one
+    {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .cuisine .down .two
+    {
+        width: 100%;
+    }
   
+    .cuisine .down .one img
+    {
+        height: auto;
+    }
+
+    .cuisine .down .two
+    {
+        margin-left: 0px;
+    }
+    .cuisine .down .two img
+    {
+        width:  100%;
+        height: auto;
+    }
+
+
+    /* Restaurant Photo section*/
+    .restaurant .bloc
+     { 
+         height: auto;
+         display: block;
+    }
+
+    .restaurant .bloc img
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    .restaurant .up .one img
+    {
+        height: auto;
+    }
+
+    .restaurant .up .two
+    {
+        margin-left: 0px;
+    }
+    
+
+    .restaurant .up .two img
+    {
+        width:  100%;
+        height: auto;
+    }
+
+    .restaurant .down .one
+    {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .restaurant .down .two
+    {
+        width: 100%;
+    }
+  
+    .restaurant .down .one img
+    {
+        height: auto;
+    }
+
+    .restaurant .down .two
+    {
+        margin-left: 0px;
+    }
+    .restaurant .down .two img
+    {
+        width:  100%;
+        height: auto;
+    }
+
+    /* Archive Photo section*/
+    .archive .bloc
+     { 
+         height: auto;
+         display: block;
+    }
+
+    .archive .bloc img
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    .archive .up .one img
+    {
+        height: auto;
+    }
+
+    .archive .up .two
+    {
+        margin-left: 0px;
+    }
+    
+
+    .archive .up .two img
+    {
+        width:  100%;
+        height: auto;
+    }
+
+    .archive .down .one
+    {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .archive .down .two
+    {
+        width: 100%;
+    }
+  
+    .archive .down .one img
+    {
+        height: auto;
+    }
+
+    .archive .down .two
+    {
+        margin-left: 0px;
+    }
+    .archive .down .two img
+    {
+        width:  100%;
+        height: auto;
+    }
+    
+
 
     /* Section Footer styling*/
 

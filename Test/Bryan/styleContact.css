@@ -633,7 +633,11 @@ footer .three a:hover {
         margin-left: 0px;
     }
 
-
+    .accueil .menu li a .command
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     .accueil .navbar .menu-btn
     {

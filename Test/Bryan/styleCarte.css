@@ -447,6 +447,12 @@ footer .three a:hover {
         margin-left: 0px;
     }
 
+
+    .accueil .menu li a .command
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     .accueil .navbar .menu-btn
     {
         position: relative;
@@ -485,215 +491,30 @@ footer .three a:hover {
         height: 50px;
     }
 
-    .presentation 
-    {
-        width: 100vw;
-        display: block;
-        height: auto;
-    }
 
-    .presentation .max-width .cube
-    {
-        display: flex;
-        height: auto;
-    }
+    /* Carte Section */
 
-    .presentation .max-width .cube img
+    .carte .raws .case .title
     {
-        height: auto;
-        width: 95vw;
-        margin-left: auto;
+        margin-top:15px ;
+        font-size: 60px;
     }
-
-    .presentation .max-width .cube .Topright
+    .carte .raws .drink .title
+    {
+        margin-top:15px ;
+        height: 35%;
+        font-size: 60px;
+    }
+    .carte .raws .case .drink-button
     {
         display: block;
-        width: 100vw;
-        height: auto;
-        order: 1;
     }
 
-    .presentation .max-width .cube .Topleft
+    .carte .raws .case .drink-button .buttonbloc
     {
-        display: block;
-        width: 100vw;
-        height: auto;
-        order:2;
-    }
-
-    .presentation .max-width .cube .Topleft .titleFormule
-    {
-        display: block;
-        font-size: 35px;
-        padding-left: 15px;
-        margin-top: 20px;
-    }
-
-    .presentation .max-width .cube .Topleft .titleFormule .left
-    {
-        margin-left: 25px;
-    }
-    .presentation .max-width .cube .Topleft .titleFormule .right
-    {
-        width: 80vw;
-        height: 100px;
         margin-top: 15px;
-        text-align: center;
-        padding-top: 8px;
-        margin-left: 0px;
-        border: 3px solid #959564;
-        border-radius: 20px;
     }
 
-    .presentation .max-width .cube .Topleft .contentFormule
-    {
-        display: block;
-        margin-right: 0;
-        padding-left: 0px;
-        margin-left: 8px;
-        width: 90vw;
-    }
-    .presentation .max-width .cube .Topleft .contentFormule .formule
-    {
-        display: block;
-        text-align: center;
-    }
-    .presentation .max-width .cube .Topleft .contentFormule .formule .left
-    {
-      width: 100%;
-    }
-
-    .presentation .max-width .cube .Topleft .contentFormule .sidenote
-    {
-        text-align: center;
-    }
-
-    .presentation .max-width .cube .Botleft
-    {
-        display: block;
-        order: 3;
-        width: 100vw;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .presentation .max-width .cube .Botright
-    {
-        display: block;
-        width: 100vw;
-        height: auto;
-        order: 4;
-    }
-
-    .presentation .max-width .cube .Botright .titleUnite
-    {   font-size: 35px;
-        width: 100vw;
-        padding-right: 0px;
-        padding-left:90px ;
-        text-align: left;
-    }
-    .presentation .max-width .cube .Botright .contentUnite
-    {
-        margin-left: 0px;
-        margin-right: 5px;
-    }
-
-    .presentation .max-width .cube .Botright .contentUnite .unite
-    {
-        font-size: 15px;
-    }
-
-    .presentation .max-width .cube .Botright .contentUnite .unite .price
-    {width: 10%;
-        order: 2;
-        text-align: right;
-    }
-
-    .presentation .max-width .cube .Botright .contentUnite .unite .plat 
-    {
-        width: 100%;
-        text-align: left;
-        margin-left: 0px;
-    }
-
-    .presentation .max-width .boisson 
-    {
-        display: block;
-        margin-top: 30px;
-        margin-bottom: 15px;
-    }
-
-    .presentation .max-width .boisson .biere
-    {
-        display: block;
-        width: 100vw;
-    }
-
-    .presentation .max-width .boisson .biere .imageBiere img
-    {
-        height: auto;
-        width: 95vw;
-        margin-right: 17px;
-    }
-
-    .presentation .max-width .boisson .autres
-    {
-        margin-left: 0px;
-        width: 100vw;
-    } 
-
-    .presentation .max-width .boisson .title
-    {
-        margin-left: 25px;
-        margin-bottom: 10px;
-    }
-
-    .presentation .max-width .boisson .article .head
-    {
-        width: 90vw;
-        font-family:  Monsterrat-Bold;
-        margin-bottom: 10px;
-    }
-    .presentation .max-width .boisson .article .head .line
-    {
-        margin-left: 10px;
-        width: 13%;
-    }
-
-    .presentation .max-width .boisson .article
-    {
-        margin-left: 10px;
-    }
-    .presentation .max-width .boisson .description
-    {
-        text-align: justify;
-        width: 90vw;
-    }
-
-    .presentation .max-width .boisson .autres .soft
-    {
-        display: block;
-    }
-
-    .presentation .max-width .boisson .autres .soft .illustration
-    {
-        display: block;
-        width: 90vw;
-        margin-left: 0px;
-        margin-top: 5px;
-    }
-
-    .presentation .max-width .boisson .autres .soft .illustration img {
-        height: auto;
-        width: 95vw;
-        margin-right: 17px;
-    }
-    .presentation .max-width .boisson .autres .soft .command
-    {
-       
-        display: block;
-        width: 90vw;
-    }    
     footer
     {
         display: block;
